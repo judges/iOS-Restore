@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "MDListener.h"
 
-
 @interface MDNotificationCenter : NSObject <MDListener> {
 @private
     NSMutableSet *_listeners;

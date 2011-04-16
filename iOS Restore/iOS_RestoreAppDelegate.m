@@ -7,13 +7,22 @@
 //
 
 #import "iOS_RestoreAppDelegate.h"
+#import "DeviceIdentification.h"
 
 @implementation iOS_RestoreAppDelegate
+
+static NSImage *redOrbImage = nil;
+static NSImage *greenOrbImage = nil;
 
 @synthesize window;
 @synthesize statusOrbView;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    redOrbImage = [[NSImage imageNamed:@"red-orb.png"] retain];
+    greenOrbImage = [[NSImage imageNamed:@"green-orb.png"] retain];
+    
+    [connectedDeviceLabel setStringValue:@"No Device Connected"];
+    
     [window setContentBorderThickness:25.0 forEdge:NSMinYEdge];
     [window setMovableByWindowBackground:YES];
     
@@ -22,47 +31,51 @@
     [[MDNotificationCenter sharedInstance] addListener:self];
 }
 
+- (void)labelDeviceAs:(NSString *)name {
+    [connectedDeviceLabel setStringValue:name];
+}
+
+- (void)updateDeviceLabelForDetachedDevice {
+    [statusOrbView setImage:redOrbImage];
+    [self labelDeviceAs:@"No Device Connected"];
+}
+
+- (void)updateDeviceLabelForProductID:(uint16_t)pid deviceID:(uint32_t)did isRestore:(BOOL)isRestore{
+    [statusOrbView setImage:greenOrbImage];
+    [self labelDeviceAs:iOSRestoreGetDeviceConnectionType(pid, did, isRestore)];
+}
+
+                      
 - (void)normalDeviceAttached:(AMDeviceRef)device {
-    NSLog(@"iOS Restore: Normal Attached");
-    [statusOrbView setImage:[NSImage imageNamed:@"green-orb.png"]];
+    [self updateDeviceLabelForProductID:AMDeviceUSBProductID(device) deviceID:0 isRestore:NO];
 }
 
 - (void)normalDeviceDetached:(AMDeviceRef)device {
-    NSLog(@"iOS Restore: Normal Detached");
-    [statusOrbView setImage:[NSImage imageNamed:@"red-orb.png"]];
+    [self updateDeviceLabelForDetachedDevice];
 }
 
 - (void)normalDeviceConnectionError {
-    NSLog(@"iOS Restore: Normal Error");
+    [self updateDeviceLabelForDetachedDevice];
 }
 
 - (void)restoreDeviceAttached:(AMRestoreModeDeviceRef)device {
-    NSLog(@"iOS Restore: Restore Attached");
-    [statusOrbView setImage:[NSImage imageNamed:@"green-orb.png"]];
+    [self updateDeviceLabelForProductID:AMDeviceUSBProductID((AMDeviceRef)device) deviceID:0 isRestore:YES];
 }
-// It is impossible to differentiate between restore and normal mode detachment, will
-//  default to using normal
 
 - (void)recoveryDeviceAttached:(AMRecoveryModeDeviceRef)device {
-    NSLog(@"iOS Restore: Recovery Attached");
-    [statusOrbView setImage:[NSImage imageNamed:@"green-orb.png"]];
-    
-    CFShow(AMRecoveryModeDeviceCopyBoardConfig(device));
+    [self updateDeviceLabelForProductID:AMRecoveryModeDeviceGetProductID(device) deviceID:AMRecoveryModeDeviceGetProductType(device) isRestore:NO];
 }
 
 - (void)recoveryDeviceDetached:(AMRecoveryModeDeviceRef)device {
-    NSLog(@"iOS Restore: Recovery Detached");
-    [statusOrbView setImage:[NSImage imageNamed:@"red-orb.png"]];
+    [self updateDeviceLabelForDetachedDevice];
 }
 
 - (void)dfuDeviceAttached:(AMDFUModeDeviceRef)device {
-    NSLog(@"iOS Restore: DFU Attached");
-    [statusOrbView setImage:[NSImage imageNamed:@"green-orb.png"]];
+    [self updateDeviceLabelForProductID:AMDFUModeDeviceGetProductID(device) deviceID:AMDFUModeDeviceGetProductType(device) isRestore:NO];
 }
 
 - (void)dfuDeviceDetached:(AMDFUModeDeviceRef)device {
-    NSLog(@"iOS Restore: DFU Detached");
-    [statusOrbView setImage:[NSImage imageNamed:@"red-orb.png"]];
+    [self updateDeviceLabelForDetachedDevice];
 }
 
 @end

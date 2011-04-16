@@ -16,10 +16,12 @@
 		521B7D181358F02900CA95E8 /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521B7D171358F02900CA95E8 /* MobileDevice.framework */; };
 		521B7D1A1358F14B00CA95E8 /* IPSW-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 521B7D191358F14B00CA95E8 /* IPSW-Large.png */; };
 		521B7D1D1358F1A800CA95E8 /* iOSRestoreIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 521B7D1C1358F1A800CA95E8 /* iOSRestoreIcon.icns */; };
-		521B7D261358F32200CA95E8 /* CanHazFirmwareOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 521B7D251358F32200CA95E8 /* CanHazFirmwareOperation.m */; };
 		52BB6A2E1358FD5B004BB32C /* MDNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BB6A2D1358FD5B004BB32C /* MDNotificationCenter.m */; };
 		52BB6A5C13592000004BB32C /* red-orb.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BB6A5A13592000004BB32C /* red-orb.png */; };
 		52BB6A5D13592000004BB32C /* green-orb.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BB6A5B13592000004BB32C /* green-orb.png */; };
+		52F12272135949E200F3C1B9 /* JRRestoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F12271135949E200F3C1B9 /* JRRestoreController.m */; };
+		52F12278135A218600F3C1B9 /* JRFWServerManifestGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F12277135A218600F3C1B9 /* JRFWServerManifestGrabber.m */; };
+		52F1227B135A21C600F3C1B9 /* JRFWServerManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F1227A135A21C600F3C1B9 /* JRFWServerManifest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,8 +53,6 @@
 		521B7D171358F02900CA95E8 /* MobileDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileDevice.framework; path = /System/Library/PrivateFrameworks/MobileDevice.framework; sourceTree = "<absolute>"; };
 		521B7D191358F14B00CA95E8 /* IPSW-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IPSW-Large.png"; sourceTree = "<group>"; };
 		521B7D1C1358F1A800CA95E8 /* iOSRestoreIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = iOSRestoreIcon.icns; sourceTree = "<group>"; };
-		521B7D241358F32200CA95E8 /* CanHazFirmwareOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanHazFirmwareOperation.h; sourceTree = "<group>"; };
-		521B7D251358F32200CA95E8 /* CanHazFirmwareOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanHazFirmwareOperation.m; sourceTree = "<group>"; };
 		52BB6A2C1358FD5B004BB32C /* MDNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDNotificationCenter.h; sourceTree = "<group>"; };
 		52BB6A2D1358FD5B004BB32C /* MDNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDNotificationCenter.m; sourceTree = "<group>"; };
 		52BB6A301358FD8B004BB32C /* MDListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDListener.h; sourceTree = "<group>"; };
@@ -60,6 +60,13 @@
 		52BB6A501359103F004BB32C /* ZipKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZipKit.framework; sourceTree = "<group>"; };
 		52BB6A5A13592000004BB32C /* red-orb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-orb.png"; sourceTree = "<group>"; };
 		52BB6A5B13592000004BB32C /* green-orb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-orb.png"; sourceTree = "<group>"; };
+		52F1226E1359437900F3C1B9 /* DeviceIdentification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceIdentification.h; sourceTree = "<group>"; };
+		52F12270135949E200F3C1B9 /* JRRestoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRRestoreController.h; sourceTree = "<group>"; };
+		52F12271135949E200F3C1B9 /* JRRestoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRRestoreController.m; sourceTree = "<group>"; };
+		52F12276135A218600F3C1B9 /* JRFWServerManifestGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRFWServerManifestGrabber.h; path = "iOS Restore.xcodeproj/JRFWServerManifestGrabber.h"; sourceTree = SOURCE_ROOT; };
+		52F12277135A218600F3C1B9 /* JRFWServerManifestGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRFWServerManifestGrabber.m; path = "iOS Restore.xcodeproj/JRFWServerManifestGrabber.m"; sourceTree = SOURCE_ROOT; };
+		52F12279135A21C600F3C1B9 /* JRFWServerManifest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFWServerManifest.h; sourceTree = "<group>"; };
+		52F1227A135A21C600F3C1B9 /* JRFWServerManifest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFWServerManifest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +123,7 @@
 		521B7CE51358ED2000CA95E8 /* iOS Restore */ = {
 			isa = PBXGroup;
 			children = (
-				52BB6A321358FE1D004BB32C /* MobileDevice.h */,
+				52F1226B1359436400F3C1B9 /* C Stuff */,
 				521B7D1E1358F1C500CA95E8 /* Classes */,
 				521B7CE61358ED2000CA95E8 /* Supporting Files */,
 			);
@@ -185,21 +192,26 @@
 		521B7D281358F33900CA95E8 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				52F12270135949E200F3C1B9 /* JRRestoreController.h */,
+				52F12271135949E200F3C1B9 /* JRRestoreController.m */,
 				52BB6A301358FD8B004BB32C /* MDListener.h */,
 				52BB6A2C1358FD5B004BB32C /* MDNotificationCenter.h */,
 				52BB6A2D1358FD5B004BB32C /* MDNotificationCenter.m */,
-				52BB6A5913591D5E004BB32C /* Threaded Operations */,
+				52F12279135A21C600F3C1B9 /* JRFWServerManifest.h */,
+				52F1227A135A21C600F3C1B9 /* JRFWServerManifest.m */,
+				52F12276135A218600F3C1B9 /* JRFWServerManifestGrabber.h */,
+				52F12277135A218600F3C1B9 /* JRFWServerManifestGrabber.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
 		};
-		52BB6A5913591D5E004BB32C /* Threaded Operations */ = {
+		52F1226B1359436400F3C1B9 /* C Stuff */ = {
 			isa = PBXGroup;
 			children = (
-				521B7D241358F32200CA95E8 /* CanHazFirmwareOperation.h */,
-				521B7D251358F32200CA95E8 /* CanHazFirmwareOperation.m */,
+				52BB6A321358FE1D004BB32C /* MobileDevice.h */,
+				52F1226E1359437900F3C1B9 /* DeviceIdentification.h */,
 			);
-			name = "Threaded Operations";
+			name = "C Stuff";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,8 +284,10 @@
 			files = (
 				521B7CED1358ED2000CA95E8 /* main.m in Sources */,
 				521B7CF31358ED2000CA95E8 /* iOS_RestoreAppDelegate.m in Sources */,
-				521B7D261358F32200CA95E8 /* CanHazFirmwareOperation.m in Sources */,
 				52BB6A2E1358FD5B004BB32C /* MDNotificationCenter.m in Sources */,
+				52F12272135949E200F3C1B9 /* JRRestoreController.m in Sources */,
+				52F12278135A218600F3C1B9 /* JRFWServerManifestGrabber.m in Sources */,
+				52F1227B135A21C600F3C1B9 /* JRFWServerManifest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

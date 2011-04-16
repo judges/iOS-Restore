@@ -31,7 +31,6 @@ typedef struct __AMDevice *AMDeviceRef;
 typedef struct __AMRecoveryModeDevice *AMRecoveryModeDeviceRef;
 typedef struct __AMDFUModeDevice *AMDFUModeDeviceRef;
 typedef struct __AMRestoreModeDevice *AMRestoreModeDeviceRef;
-typedef unsigned char *AMGenericDeviceRef;
 
 typedef unsigned char *AMDeviceSubscriptionRef;
 
@@ -75,6 +74,8 @@ AMStatus AMDeviceStartService(AMDeviceRef device, CFStringRef serviceName, int *
 
 AMStatus AMDPostNotification(int socket, CFStringRef notification, CFStringRef userinfo);
 
+uint16_t AMDeviceUSBProductID(AMDeviceRef device);
+
 void AMDeviceRelease(AMDeviceRef device);
 void AMDeviceRetain(AMDeviceRef device);
 
@@ -89,7 +90,8 @@ AMStatus AMRecoveryModeDeviceSendFileToDevice(AMRecoveryModeDeviceRef device, CF
 AMStatus AMRecoveryModeDeviceSetAutoBoot(AMRecoveryModeDeviceRef device, Boolean autoBoot);
 AMStatus AMRecoveryModeDeviceReboot(AMRecoveryModeDeviceRef device);
 
-CFDictionaryRef AMRecoveryModeDeviceCopyBoardConfig(AMRecoveryModeDeviceRef device);
+uint16_t AMRecoveryModeDeviceGetProductID(AMRecoveryModeDeviceRef device);
+uint32_t AMRecoveryModeDeviceGetProductType(AMRecoveryModeDeviceRef device);
 
 CFTypeID AMRecoveryModeDeviceGetTypeID(AMRecoveryModeDeviceRef device);
 
@@ -102,3 +104,7 @@ AMRestoreModeDeviceRef AMRestoreModeDeviceCreate(int alwaysZero_1, int connectio
 
 CFDictionaryRef AMRestoreCreateDefaultOptions(CFAllocatorRef allocator); // may also be used for recovery/dfu restores
 AMStatus AMRestorePerformRestoreModeRestore(AMRecoveryModeDeviceRef device, CFDictionaryRef restoreOptions, void *callback, void *userInfo);
+
+// Functions for use with AMDFUModeDeviceRef objects(DFU/WTF interface)
+uint16_t AMDFUModeDeviceGetProductID(AMDFUModeDeviceRef device);
+uint32_t AMDFUModeDeviceGetProductType(AMDFUModeDeviceRef device);

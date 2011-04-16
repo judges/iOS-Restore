@@ -15,7 +15,11 @@
 @private
     NSWindow *window;
     NSImageView *statusOrbView;
+    IBOutlet NSTextField *connectedDeviceLabel;
 }
+
+- (void)updateDeviceLabelForDetachedDevice;
+- (void)updateDeviceLabelForProductID:(uint16_t)pid deviceID:(uint32_t)did isRestore:(BOOL)isRestore;
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSImageView *statusOrbView;

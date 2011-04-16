@@ -10,7 +10,6 @@
 
 /* Callbacks */
 
-
 void device_notification(AMDeviceNotificationRef notification) {
     AMDeviceRef device = notification->device;
     AMStatus status;
