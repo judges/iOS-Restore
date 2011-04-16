@@ -336,7 +336,7 @@
 							<string key="NSFrame">{{6, 6}, {13, 13}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="449337425"/>
+							<reference key="NSNextKeyView" ref="2517436"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSImageCell" key="NSCell" id="812872718">
 								<int key="NSCellFlags">130560</int>
@@ -348,7 +348,7 @@
 							</object>
 							<bool key="NSEditable">YES</bool>
 						</object>
-						<object class="NSTextField" id="449337425">
+						<object class="NSTextField" id="2517436">
 							<reference key="NSNextResponder" ref="439893737"/>
 							<int key="NSvFlags">268</int>
 							<string key="NSFrame">{{24, 5}, {210, 14}}</string>
@@ -356,7 +356,7 @@
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
 							<bool key="NSEnabled">YES</bool>
-							<object class="NSTextFieldCell" key="NSCell" id="655473117">
+							<object class="NSTextFieldCell" key="NSCell" id="155351326">
 								<int key="NSCellFlags">68288064</int>
 								<int key="NSCellFlags2">272761856</int>
 								<string key="NSContents"/>
@@ -365,7 +365,7 @@
 									<double key="NSSize">11</double>
 									<int key="NSfFlags">3100</int>
 								</object>
-								<reference key="NSControlView" ref="449337425"/>
+								<reference key="NSControlView" ref="2517436"/>
 								<reference key="NSBackgroundColor" ref="403711037"/>
 								<object class="NSColor" key="NSTextColor">
 									<int key="NSColorSpace">6</int>
@@ -505,9 +505,17 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">connectedDeviceLabel</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="449337425"/>
+						<reference key="destination" ref="2517436"/>
 					</object>
 					<int key="connectionID">555</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">delegate</string>
+						<reference key="source" ref="19135120"/>
+						<reference key="destination" ref="976324537"/>
+					</object>
+					<int key="connectionID">556</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -632,6 +640,7 @@
 						<int key="objectID">58</int>
 						<reference key="object" ref="238522557"/>
 						<reference key="parent" ref="110575045"/>
+						<string key="objectName">Menu Item - About iOS Restore</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">134</int>
@@ -712,7 +721,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="19135120"/>
 							<reference ref="1028040553"/>
-							<reference ref="449337425"/>
+							<reference ref="2517436"/>
 						</object>
 						<reference key="parent" ref="972006081"/>
 					</object>
@@ -783,17 +792,17 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">553</int>
-						<reference key="object" ref="449337425"/>
+						<reference key="object" ref="2517436"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="655473117"/>
+							<reference ref="155351326"/>
 						</object>
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">554</int>
-						<reference key="object" ref="655473117"/>
-						<reference key="parent" ref="449337425"/>
+						<reference key="object" ref="155351326"/>
+						<reference key="parent" ref="2517436"/>
 					</object>
 				</object>
 			</object>
@@ -848,6 +857,7 @@
 					<string>494.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>5.ImportedFromIB2</string>
+					<string>541.IBAttributePlaceholdersKey</string>
 					<string>541.IBPluginDependency</string>
 					<string>542.IBPluginDependency</string>
 					<string>543.IBPluginDependency</string>
@@ -925,6 +935,14 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<integer value="1"/>
+					<object class="NSMutableDictionary">
+						<string key="NS.key.0">InitialTabViewItem</string>
+						<object class="IBInitialTabViewItemAttribute" key="NS.object.0">
+							<string key="name">InitialTabViewItem</string>
+							<reference key="object" ref="19135120"/>
+							<reference key="initialTabViewItem" ref="748163921"/>
+						</object>
+					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -966,7 +984,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">555</int>
+			<int key="maxID">556</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

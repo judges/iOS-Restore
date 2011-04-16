@@ -21,7 +21,6 @@
 		52BB6A5D13592000004BB32C /* green-orb.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BB6A5B13592000004BB32C /* green-orb.png */; };
 		52F12272135949E200F3C1B9 /* JRRestoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F12271135949E200F3C1B9 /* JRRestoreController.m */; };
 		52F12278135A218600F3C1B9 /* JRFWServerManifestGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F12277135A218600F3C1B9 /* JRFWServerManifestGrabber.m */; };
-		52F1227B135A21C600F3C1B9 /* JRFWServerManifest.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F1227A135A21C600F3C1B9 /* JRFWServerManifest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,8 +64,6 @@
 		52F12271135949E200F3C1B9 /* JRRestoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRRestoreController.m; sourceTree = "<group>"; };
 		52F12276135A218600F3C1B9 /* JRFWServerManifestGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JRFWServerManifestGrabber.h; path = "iOS Restore.xcodeproj/JRFWServerManifestGrabber.h"; sourceTree = SOURCE_ROOT; };
 		52F12277135A218600F3C1B9 /* JRFWServerManifestGrabber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JRFWServerManifestGrabber.m; path = "iOS Restore.xcodeproj/JRFWServerManifestGrabber.m"; sourceTree = SOURCE_ROOT; };
-		52F12279135A21C600F3C1B9 /* JRFWServerManifest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFWServerManifest.h; sourceTree = "<group>"; };
-		52F1227A135A21C600F3C1B9 /* JRFWServerManifest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFWServerManifest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,8 +194,6 @@
 				52BB6A301358FD8B004BB32C /* MDListener.h */,
 				52BB6A2C1358FD5B004BB32C /* MDNotificationCenter.h */,
 				52BB6A2D1358FD5B004BB32C /* MDNotificationCenter.m */,
-				52F12279135A21C600F3C1B9 /* JRFWServerManifest.h */,
-				52F1227A135A21C600F3C1B9 /* JRFWServerManifest.m */,
 				52F12276135A218600F3C1B9 /* JRFWServerManifestGrabber.h */,
 				52F12277135A218600F3C1B9 /* JRFWServerManifestGrabber.m */,
 			);
@@ -287,7 +282,6 @@
 				52BB6A2E1358FD5B004BB32C /* MDNotificationCenter.m in Sources */,
 				52F12272135949E200F3C1B9 /* JRRestoreController.m in Sources */,
 				52F12278135A218600F3C1B9 /* JRFWServerManifestGrabber.m in Sources */,
-				52F1227B135A21C600F3C1B9 /* JRFWServerManifest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

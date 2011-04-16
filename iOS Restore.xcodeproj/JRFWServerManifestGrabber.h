@@ -8,10 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol JRFWServerManifestGrabberDelegate;
 
 @interface JRFWServerManifestGrabber : NSObject {
 @private
     
 }
+
+@end
+
+@protocol JRFWServerManifestGrabberDelegate <NSObject>
+
+@optional
+- (void)serverManifestGrabberDidBeginDownloading:(JRFWServerManifestGrabber *)grabber;
+- (void)serverManifestGrabberDidFinishWithManifest:(NSDictionary *)manifest;
+- (void)serverManifestGrabberFailedWithError:(NSError *)error;
 
 @end

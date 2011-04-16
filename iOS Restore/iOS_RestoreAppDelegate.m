@@ -26,7 +26,7 @@ static NSImage *greenOrbImage = nil;
     [window setContentBorderThickness:25.0 forEdge:NSMinYEdge];
     [window setMovableByWindowBackground:YES];
     
-    [statusOrbView setImage:[NSImage imageNamed:@"red-orb.png"]];
+    [statusOrbView setImage:redOrbImage];
     
     [[MDNotificationCenter sharedInstance] addListener:self];
 }
@@ -76,6 +76,10 @@ static NSImage *greenOrbImage = nil;
 
 - (void)dfuDeviceDetached:(AMDFUModeDeviceRef)device {
     [self updateDeviceLabelForDetachedDevice];
+}
+
+- (void)tabView:(NSTabView *)tabView didSelectTabViewItem:(NSTabViewItem *)tabViewItem {
+    
 }
 
 @end

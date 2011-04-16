@@ -11,7 +11,7 @@
 #import "MDNotificationCenter.h"
 
 
-@interface iOS_RestoreAppDelegate : NSObject <NSApplicationDelegate, MDListener> {
+@interface iOS_RestoreAppDelegate : NSObject <NSApplicationDelegate, MDListener, NSTabViewDelegate> {
 @private
     NSWindow *window;
     NSImageView *statusOrbView;
