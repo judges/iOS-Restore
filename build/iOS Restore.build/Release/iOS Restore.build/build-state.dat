@@ -1,0 +1,636 @@
+TiOS Restore
+v3
+r1
+cCheck dependencies
+cProcessInfoPlistFile "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Info.plist" "iOS Restore/iOS Restore-Info.plist"
+cProcessPCH "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-fvptcakarsntphfdtpixckmmpiyy/iOS Restore-Prefix.pch.pth" "iOS Restore/iOS Restore-Prefix.pch" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cwdchnkfmeozenfhavbghwufjbtq/iOS Restore-Prefix.pch.pth" "iOS Restore/iOS Restore-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cctpxzgaxvpexydptcsfwwxsvewk/iOS Restore-Prefix.pch.pth" "iOS Restore/iOS Restore-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+cProcessPCH "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-ftifacjzplbbbffthlxdmytdqjxn/iOS Restore-Prefix.pch.pth" "iOS Restore/iOS Restore-Prefix.pch" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+cAnalyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m"
+cAnalyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m"
+cAnalyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m"
+cAnalyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m"
+cAnalyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m"
+cAnalyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m"
+cAnalyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m"
+cCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/main.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS_RestoreAppDelegate.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/MDNotificationCenter.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/CanHazFirmwareOperation.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/main.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS_RestoreAppDelegate.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/CanHazFirmwareOperation.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/MDNotificationCenter.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cAnalyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m"
+cLd "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS Restore" normal x86_64
+cLd "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS Restore" normal i386
+cCreateUniversalBinary "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/MacOS/iOS Restore" normal "x86_64 i386"
+cGenerateDSYMFile "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app.dSYM" "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/MacOS/iOS Restore"
+cCopyStringsFile "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/en.lproj/InfoPlist.strings" "iOS Restore/en.lproj/InfoPlist.strings"
+cCpResource "iOS Restore/en.lproj/Credits.rtf" "build/Release/iOS Restore.app/Contents/Resources/en.lproj/Credits.rtf"
+cCompileXIB "/Users/John/Desktop/projects/iOS Restore/iOS Restore/en.lproj/MainWindow.xib"
+cCpResource "iOS Restore/iOSRestoreIcon.icns" "build/Release/iOS Restore.app/Contents/Resources/iOSRestoreIcon.icns"
+cCpResource "iOS Restore/IPSW-Large.png" "build/Release/iOS Restore.app/Contents/Resources/IPSW-Large.png"
+cCpResource "iOS Restore/red-orb.png" "build/Release/iOS Restore.app/Contents/Resources/red-orb.png"
+cCpResource "iOS Restore/green-orb.png" "build/Release/iOS Restore.app/Contents/Resources/green-orb.png"
+cTouch "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app"
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004D82E10700000000000000EE
+t1300422919
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004D82E0FF0000000000003430
+t1300422911
+s13360
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h
+c000000004CC3E8CB0000000000000AF4
+t1287907531
+s2804
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC401D100000000000013E6
+t1287913937
+s5094
+
+N/System/Library/PrivateFrameworks/MobileDevice.framework/MobileDevice
+c000000004D4F6E9C000000000029DDB0
+t1297051292
+s2743728
+
+N/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app.dSYM
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Info.plist
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/MacOS/iOS Restore
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/PkgInfo
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/IPSW-Large.png
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/en.lproj/Credits.rtf
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/en.lproj/MainWindow.nib
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/green-orb.png
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/iOSRestoreIcon.icns
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/red-orb.png
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/CanHazFirmwareOperation.o
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/MDNotificationCenter.o
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS Restore
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS Restore.LinkFileList
+c000000004DA8F3ED000000000000020D
+t1302918125
+s525
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS_RestoreAppDelegate.o
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/CanHazFirmwareOperation.o
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/MDNotificationCenter.o
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS Restore
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS Restore.LinkFileList
+c000000004DA8F3ED0000000000000215
+t1302918125
+s533
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS_RestoreAppDelegate.o
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/StaticAnalyzer/normal/i386/CanHazFirmwareOperation.plist
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/StaticAnalyzer/normal/i386/MDNotificationCenter.plist
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/StaticAnalyzer/normal/i386/iOS_RestoreAppDelegate.plist
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/StaticAnalyzer/normal/i386/main.plist
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/StaticAnalyzer/normal/x86_64/CanHazFirmwareOperation.plist
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/StaticAnalyzer/normal/x86_64/MDNotificationCenter.plist
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/StaticAnalyzer/normal/x86_64/iOS_RestoreAppDelegate.plist
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/StaticAnalyzer/normal/x86_64/main.plist
+t2
+s0
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.h
+c000000004DA8BBA2000000000000010D
+t1302903714
+s269
+i<Foundation/Foundation.h>
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m
+c000000004DA8BBA20000000000000198
+t1302903714
+s408
+i"CanHazFirmwareOperation.h"
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/IPSW-Large.png
+c000000004DA8B9B6000000000000AADE
+t1302903222
+s43742
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDListener.h
+c000000004DA8CE4D0000000000000329
+t1302908493
+s809
+i<Foundation/Foundation.h>
+i"MobileDevice.h"
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.h
+c000000004DA8CAB10000000000000212
+t1302907569
+s530
+i<Foundation/Foundation.h>
+i"MDListener.h"
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m
+c000000004DA8ECA80000000000001464
+t1302916264
+s5220
+i"MDNotificationCenter.h"
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/MobileDevice.h
+c000000004DA8EE24000000000000136A
+t1302916644
+s4970
+i<CoreFoundation/CoreFoundation.h>
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/en.lproj/Credits.rtf
+c000000004DA8B5A000000000000001B4
+t1302902176
+s436
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/en.lproj/InfoPlist.strings
+c000000004DA8BA39000000000000002D
+t1302903353
+s45
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/en.lproj/MainWindow.xib
+c000000004DA8EAE6000000000000A126
+t1302915814
+s41254
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/green-orb.png
+c000000004DA8E8690000000000005591
+t1302915177
+s21905
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS Restore-Prefix.pch
+c000000004DA8B5A00000000000000099
+t1302902176
+s153
+i<Cocoa/Cocoa.h>
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOSRestoreIcon.icns
+c000000004DA8BA170000000000015148
+t1302903319
+s86344
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.h
+c000000004DA8EA7000000000000001F2
+t1302915696
+s498
+i<Cocoa/Cocoa.h>
+i"MDListener.h"
+i"MDNotificationCenter.h"
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m
+c000000004DA8EE350000000000000819
+t1302916661
+s2073
+i"iOS_RestoreAppDelegate.h"
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m
+c000000004DA8B5A00000000000000104
+t1302902176
+s260
+i<Cocoa/Cocoa.h>
+
+N/Users/John/Desktop/projects/iOS Restore/iOS Restore/red-orb.png
+c000000004DA8E8730000000000004CE2
+t1302915187
+s19682
+
+N/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cctpxzgaxvpexydptcsfwwxsvewk/iOS Restore-Prefix.pch.pth
+t2
+s0
+
+N/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cwdchnkfmeozenfhavbghwufjbtq/iOS Restore-Prefix.pch.pth
+t2
+s0
+
+N/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-ftifacjzplbbbffthlxdmytdqjxn/iOS Restore-Prefix.pch.pth
+t2
+s0
+
+N/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-fvptcakarsntphfdtpixckmmpiyy/iOS Restore-Prefix.pch.pth
+t2
+s0
+
+NiOS Restore/iOS Restore-Info.plist
+c000000004DA8BA3C0000000000000439
+t1302903356
+s1081
+
+CAnalyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m"
+s324610925.808349
+e324610925.947971
+r1
+xAnalyze
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Analyze /Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m7b13cf6d2b59b341^3aaef26d2b59b341^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/CanHazFirmwareOperation.m0000000000000000^1732"Analyze "iOS Restore/CanHazFirmwareOperation.m"    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -DIBOutlet=__attribute__((iboutlet)) -DIBOutletCollection(ClassName)=__attribute__((iboutletcollection)) -DIBAction=void)__attribute__((ibaction) "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/i386" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -include "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cctpxzgaxvpexydptcsfwwxsvewk/iOS Restore-Prefix.pch" --analyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m" -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/StaticAnalyzer/normal/i386/CanHazFirmwareOperation.plist"
+
+CAnalyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m"
+s324610925.934244
+e324610926.033561
+r1
+xAnalyze
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Analyze /Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.mf04def6d2b59b341^3197086e2b59b341^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/MDNotificationCenter.m0000000000000000^1723"Analyze "iOS Restore/MDNotificationCenter.m"    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -DIBOutlet=__attribute__((iboutlet)) -DIBOutletCollection(ClassName)=__attribute__((iboutletcollection)) -DIBAction=void)__attribute__((ibaction) "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/i386" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -include "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cctpxzgaxvpexydptcsfwwxsvewk/iOS Restore-Prefix.pch" --analyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m" -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/StaticAnalyzer/normal/i386/MDNotificationCenter.plist"
+
+CAnalyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m"
+s324610925.800957
+e324610925.951090
+r1
+xAnalyze
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m
+o/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m:50:12: warning: Potential leak of an object allocated on line 50
+o     CFShow(AMRecoveryModeDeviceCopyBoardConfig(device));
+o            ^
+o1 warning generated.
+o/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m:50:12: warning: Potential leak of an object allocated on line 50
+o     CFShow(AMRecoveryModeDeviceCopyBoardConfig(device));
+o            ^
+o1 warning generated.
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Analyze /Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.ma12bcd6d2b59b341^a27af36d2b59b341^-236"/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m:50:12: warning: Potential leak of an object allocated on line 50     CFShow(AMRecoveryModeDeviceCopyBoardConfig(device));            ^1 warning generated.1(35%IDEActivityLogAnalyzerResultMessage2@48"Potential leak of an object allocated on line 50-324610925#18446744073709551615#0#5(44%IDEActivityLogAnalyzerControlFlowStepMessage3@0"-324610925#18446744073709551615#0#-1#32"com.apple.dt.IDE.analyzer.result23%DVTTextDocumentLocation4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#1(41%IDEActivityLogAnalyzerControlFlowStepEdge5@4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^46#4#46#4#18446744073709551615#0#4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^49#4#49#4#18446744073709551615#0#3@0"-324610925#18446744073709551615#0#-1#32"com.apple.dt.IDE.analyzer.result4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#1(5@4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^49#4#49#4#18446744073709551615#0#4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^49#11#49#53#18446744073709551615#0#38%IDEActivityLogAnalyzerEventStepMessage6@129"Call to function 'AMRecoveryModeDeviceCopyBoardConfig' returns a Core Foundation object with a +1 retain count (owning reference)-324610925#18446744073709551615#0#-1#32"com.apple.dt.IDE.analyzer.result4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^49#11#49#11#18446744073709551615#0#-1(4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^49#11#49#54#18446744073709551615#0#-129"Call to function 'AMRecoveryModeDeviceCopyBoardConfig' returns a Core Foundation object with a +1 retain count (owning reference)3@0"-324610925#18446744073709551615#0#-1#32"com.apple.dt.IDE.analyzer.result4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#---4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#1(5@4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^49#11#49#53#18446744073709551615#0#4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^50#0#50#0#18446744073709551615#0#6@119"Object allocated on line 50 is not referenced later in this execution path and has a retain count of +1 (object leaked)-324610925#18446744073709551615#0#-1#32"com.apple.dt.IDE.analyzer.result4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^50#0#50#0#18446744073709551615#0#-1(4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^50#0#50#1#18446744073709551615#0#-119"Object allocated on line 50 is not referenced later in this execution path and has a retain count of +1 (object leaked)1#32"com.apple.dt.IDE.analyzer.result4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^50#0#50#0#18446744073709551615#0#36"Memory (Core Foundation/Objective-C)1(4@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^50#0#50#1#18446744073709551615#0#-23"Leak of returned object0#0#0#-19%DVTDocumentLocation7@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^1729"Analyze "iOS Restore/iOS_RestoreAppDelegate.m"    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -DIBOutlet=__attribute__((iboutlet)) -DIBOutletCollection(ClassName)=__attribute__((iboutletcollection)) -DIBAction=void)__attribute__((ibaction) "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/i386" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -include "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cctpxzgaxvpexydptcsfwwxsvewk/iOS Restore-Prefix.pch" --analyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m" -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/StaticAnalyzer/normal/i386/iOS_RestoreAppDelegate.plist"
+
+CAnalyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m"
+s324610925.800786
+e324610925.942193
+r1
+xAnalyze
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Analyze /Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m7522cd6d2b59b341^c632f16d2b59b341^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/main.m0000000000000000^1675"Analyze "iOS Restore/main.m"    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -DIBOutlet=__attribute__((iboutlet)) -DIBOutletCollection(ClassName)=__attribute__((iboutletcollection)) -DIBAction=void)__attribute__((ibaction) "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/i386" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -include "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cctpxzgaxvpexydptcsfwwxsvewk/iOS Restore-Prefix.pch" --analyze "/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m" -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/StaticAnalyzer/normal/i386/main.plist"
+
+CCheck dependencies
+r0
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies056bd46c2b59b341^174a026d2b59b341^---0#1#0#--18"Check dependencies
+
+CCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/CanHazFirmwareOperation.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s324610925.906745
+e324610925.939391
+r1
+xCompileC
+xbuild/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/CanHazFirmwareOperation.o
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m5e47e86d2b59b341^2882f06d2b59b341^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/CanHazFirmwareOperation.m0000000000000000^1735"CompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/CanHazFirmwareOperation.o" "iOS Restore/CanHazFirmwareOperation.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/i386" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -include "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cwdchnkfmeozenfhavbghwufjbtq/iOS Restore-Prefix.pch" -c "/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m" -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/CanHazFirmwareOperation.o"
+
+CCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/MDNotificationCenter.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s324610925.923281
+e324610925.982262
+r1
+xCompileC
+xbuild/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/MDNotificationCenter.o
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m0f80ec6d2b59b341^9b74fb6d2b59b341^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/MDNotificationCenter.m0000000000000000^1723"CompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/MDNotificationCenter.o" "iOS Restore/MDNotificationCenter.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/i386" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -include "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cwdchnkfmeozenfhavbghwufjbtq/iOS Restore-Prefix.pch" -c "/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m" -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/MDNotificationCenter.o"
+
+CCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS_RestoreAppDelegate.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s324610925.898429
+e324610925.959896
+r1
+xCompileC
+xbuild/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS_RestoreAppDelegate.o
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.mab24e66d2b59b341^91baf56d2b59b341^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^1731"CompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS_RestoreAppDelegate.o" "iOS Restore/iOS_RestoreAppDelegate.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/i386" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -include "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cwdchnkfmeozenfhavbghwufjbtq/iOS Restore-Prefix.pch" -c "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m" -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS_RestoreAppDelegate.o"
+
+CCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/main.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s324610925.888482
+e324610925.923112
+r1
+xCompileC
+xbuild/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/main.o
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m4697e36d2b59b341^3c4fec6d2b59b341^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/main.m0000000000000000^1659"CompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/main.o" "iOS Restore/main.m" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/i386" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -include "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cwdchnkfmeozenfhavbghwufjbtq/iOS Restore-Prefix.pch" -c "/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m" -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/main.o"
+
+CCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/CanHazFirmwareOperation.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s324610925.861250
+e324610925.906350
+r1
+xCompileC
+xbuild/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/CanHazFirmwareOperation.o
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m1f9fdc6d2b59b341^a704e86d2b59b341^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/CanHazFirmwareOperation.m0000000000000000^1745"CompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/CanHazFirmwareOperation.o" "iOS Restore/CanHazFirmwareOperation.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/x86_64" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -include "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-fvptcakarsntphfdtpixckmmpiyy/iOS Restore-Prefix.pch" -c "/Users/John/Desktop/projects/iOS Restore/iOS Restore/CanHazFirmwareOperation.m" -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/CanHazFirmwareOperation.o"
+
+CCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/MDNotificationCenter.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s324610925.860409
+e324610925.950323
+r1
+xCompileC
+xbuild/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/MDNotificationCenter.o
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m9868dc6d2b59b341^7846f36d2b59b341^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/MDNotificationCenter.m0000000000000000^1733"CompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/MDNotificationCenter.o" "iOS Restore/MDNotificationCenter.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/x86_64" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -include "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-fvptcakarsntphfdtpixckmmpiyy/iOS Restore-Prefix.pch" -c "/Users/John/Desktop/projects/iOS Restore/iOS Restore/MDNotificationCenter.m" -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/MDNotificationCenter.o"
+
+CCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS_RestoreAppDelegate.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s324610925.852677
+e324610925.934077
+r1
+xCompileC
+xbuild/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS_RestoreAppDelegate.o
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.me069da6d2b59b341^711def6d2b59b341^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS_RestoreAppDelegate.m0000000000000000^1741"CompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS_RestoreAppDelegate.o" "iOS Restore/iOS_RestoreAppDelegate.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/x86_64" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -include "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-fvptcakarsntphfdtpixckmmpiyy/iOS Restore-Prefix.pch" -c "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS_RestoreAppDelegate.m" -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS_RestoreAppDelegate.o"
+
+CCompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/main.o" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s324610925.851667
+e324610925.898228
+r1
+xCompileC
+xbuild/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/main.o
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m1b2ada6d2b59b341^e1f1e56d2b59b341^---0#0#0#-19%DVTDocumentLocation2@79"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/main.m0000000000000000^1669"CompileC "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/main.o" "iOS Restore/main.m" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/x86_64" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -include "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-fvptcakarsntphfdtpixckmmpiyy/iOS Restore-Prefix.pch" -c "/Users/John/Desktop/projects/iOS Restore/iOS Restore/main.m" -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/main.o"
+
+CCompileXIB "/Users/John/Desktop/projects/iOS Restore/iOS Restore/en.lproj/MainWindow.xib"
+s324610926.118883
+e324610926.703566
+r1
+xCompileXIB
+x/Users/John/Desktop/projects/iOS Restore/iOS Restore/en.lproj/MainWindow.xib
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compiling /Users/John/Desktop/projects/iOS Restore/iOS Restore/en.lproj/MainWindow.xibbd8c1e6e2b59b341^2e1cb46e2b59b341^---0#0#0#-19%DVTDocumentLocation2@96"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/en.lproj/MainWindow.xib0000000000000000^495"CompileXIB "iOS Restore/en.lproj/MainWindow.xib"    cd "/Users/John/Desktop/projects/iOS Restore"    setenv XCODE_DEVELOPER_USR_PATH /Developer/usr/bin/..    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/en.lproj/MainWindow.nib" "/Users/John/Desktop/projects/iOS Restore/iOS Restore/en.lproj/MainWindow.xib" --sdk /Developer/SDKs/MacOSX10.6.sdk
+
+CCopyStringsFile "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/en.lproj/InfoPlist.strings" "iOS Restore/en.lproj/InfoPlist.strings"
+s324610926.118579
+e324610926.126840
+r1
+xCopyStringsFile
+x/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/en.lproj/InfoPlist.strings
+xiOS Restore/en.lproj/InfoPlist.strings
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Copy iOS Restore/en.lproj/InfoPlist.stringse86b1e6e2b59b341^ee77206e2b59b341^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/en.lproj/InfoPlist.strings0000000000000000^420"CopyStringsFile "build/Release/iOS Restore.app/Contents/Resources/en.lproj/InfoPlist.strings" "iOS Restore/en.lproj/InfoPlist.strings"    cd "/Users/John/Desktop/projects/iOS Restore"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/en.lproj" -- "iOS Restore/en.lproj/InfoPlist.strings"
+
+CCpResource "iOS Restore/IPSW-Large.png" "build/Release/iOS Restore.app/Contents/Resources/IPSW-Large.png"
+s324610926.118913
+e324610926.124690
+r1
+xCpResource
+xiOS Restore/IPSW-Large.png
+xbuild/Release/iOS Restore.app/Contents/Resources/IPSW-Large.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection68"Copy build/Release/iOS Restore.app/Contents/Resources/IPSW-Large.png338d1e6e2b59b341^d942206e2b59b341^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/Users/John/Desktop/projects/iOS%20Restore/build/Release/iOS%20Restore.app/Contents/Resources/IPSW-Large.png0000204dfb01f041^438"CpResource "iOS Restore/IPSW-Large.png" "build/Release/iOS Restore.app/Contents/Resources/IPSW-Large.png"    cd "/Users/John/Desktop/projects/iOS Restore"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks "/Users/John/Desktop/projects/iOS Restore/iOS Restore/IPSW-Large.png" "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources"
+
+CCpResource "iOS Restore/en.lproj/Credits.rtf" "build/Release/iOS Restore.app/Contents/Resources/en.lproj/Credits.rtf"
+s324610926.118875
+e324610926.121267
+r1
+xCpResource
+xiOS Restore/en.lproj/Credits.rtf
+xbuild/Release/iOS Restore.app/Contents/Resources/en.lproj/Credits.rtf
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Copy build/Release/iOS Restore.app/Contents/Resources/en.lproj/Credits.rtff88a1e6e2b59b341^fb3a206e2b59b341^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/John/Desktop/projects/iOS%20Restore/build/Release/iOS%20Restore.app/Contents/Resources/en.lproj/Credits.rtf0000204dfb01f041^465"CpResource "iOS Restore/en.lproj/Credits.rtf" "build/Release/iOS Restore.app/Contents/Resources/en.lproj/Credits.rtf"    cd "/Users/John/Desktop/projects/iOS Restore"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks "/Users/John/Desktop/projects/iOS Restore/iOS Restore/en.lproj/Credits.rtf" "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources/en.lproj"
+
+CCpResource "iOS Restore/green-orb.png" "build/Release/iOS Restore.app/Contents/Resources/green-orb.png"
+s324610926.119000
+e324610926.122598
+r1
+xCpResource
+xiOS Restore/green-orb.png
+xbuild/Release/iOS Restore.app/Contents/Resources/green-orb.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Copy build/Release/iOS Restore.app/Contents/Resources/green-orb.pngd28f1e6e2b59b341^7841206e2b59b341^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/John/Desktop/projects/iOS%20Restore/build/Release/iOS%20Restore.app/Contents/Resources/green-orb.png0000204dfb01f041^435"CpResource "iOS Restore/green-orb.png" "build/Release/iOS Restore.app/Contents/Resources/green-orb.png"    cd "/Users/John/Desktop/projects/iOS Restore"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks "/Users/John/Desktop/projects/iOS Restore/iOS Restore/green-orb.png" "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources"
+
+CCpResource "iOS Restore/iOSRestoreIcon.icns" "build/Release/iOS Restore.app/Contents/Resources/iOSRestoreIcon.icns"
+s324610926.118892
+e324610926.124706
+r1
+xCpResource
+xiOS Restore/iOSRestoreIcon.icns
+xbuild/Release/iOS Restore.app/Contents/Resources/iOSRestoreIcon.icns
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Copy build/Release/iOS Restore.app/Contents/Resources/iOSRestoreIcon.icnsb98d1e6e2b59b341^1844206e2b59b341^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/John/Desktop/projects/iOS%20Restore/build/Release/iOS%20Restore.app/Contents/Resources/iOSRestoreIcon.icns0000204dfb01f041^453"CpResource "iOS Restore/iOSRestoreIcon.icns" "build/Release/iOS Restore.app/Contents/Resources/iOSRestoreIcon.icns"    cd "/Users/John/Desktop/projects/iOS Restore"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOSRestoreIcon.icns" "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources"
+
+CCpResource "iOS Restore/red-orb.png" "build/Release/iOS Restore.app/Contents/Resources/red-orb.png"
+s324610926.118993
+e324610926.122236
+r1
+xCpResource
+xiOS Restore/red-orb.png
+xbuild/Release/iOS Restore.app/Contents/Resources/red-orb.png
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Release/iOS Restore.app/Contents/Resources/red-orb.png1d8e1e6e2b59b341^d53f206e2b59b341^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/John/Desktop/projects/iOS%20Restore/build/Release/iOS%20Restore.app/Contents/Resources/red-orb.png0000204dfb01f041^429"CpResource "iOS Restore/red-orb.png" "build/Release/iOS Restore.app/Contents/Resources/red-orb.png"    cd "/Users/John/Desktop/projects/iOS Restore"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks "/Users/John/Desktop/projects/iOS Restore/iOS Restore/red-orb.png" "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Resources"
+
+CCreateUniversalBinary "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/MacOS/iOS Restore" normal "x86_64 i386"
+s324610926.091002
+e324610926.096227
+r1
+xCreateUniversalBinary
+x/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/MacOS/iOS Restore
+xnormal
+xx86_64 i386
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Create universal binary /Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/MacOS/iOS Restore7959176e2b59b341^12a2186e2b59b341^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/Users/John/Desktop/projects/iOS%20Restore/build/Release/iOS%20Restore.app/Contents/MacOS/iOS%20Restore0000204dfb01f041^538"CreateUniversalBinary "build/Release/iOS Restore.app/Contents/MacOS/iOS Restore" normal "x86_64 i386"    cd "/Users/John/Desktop/projects/iOS Restore"    /usr/bin/lipo -create "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS Restore" "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS Restore" -output "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/MacOS/iOS Restore"
+
+CGenerateDSYMFile "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app.dSYM" "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/MacOS/iOS Restore"
+s324610926.096420
+e324610926.117163
+r1
+xGenerateDSYMFile
+x/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app.dSYM
+x/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/MacOS/iOS Restore
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Generating /Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app.dSYM27bc186e2b59b341^05fd1d6e2b59b341^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/John/Desktop/projects/iOS%20Restore/build/Release/iOS%20Restore.app.dSYM0000204dfb01f041^376"GenerateDSYMFile "build/Release/iOS Restore.app.dSYM" "build/Release/iOS Restore.app/Contents/MacOS/iOS Restore"    cd "/Users/John/Desktop/projects/iOS Restore"    /Developer/usr/bin/dsymutil "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/MacOS/iOS Restore" -o "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app.dSYM"
+
+CLd "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS Restore" normal i386
+s324610925.982433
+e324610926.090805
+r1
+xLd
+x/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS Restore
+xnormal
+xi386
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Link /Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS Restore2593fb6d2b59b341^4f40176e2b59b341^---0#0#0#--843"Ld "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS Restore" normal i386    cd "/Users/John/Desktop/projects/iOS Restore"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -filelist "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS Restore.LinkFileList" -mmacosx-version-min=10.6 -framework MobileDevice -framework Cocoa -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/i386/iOS Restore"
+
+CLd "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS Restore" normal x86_64
+s324610925.951078
+e324610926.072369
+r1
+xLd
+x/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS Restore
+xnormal
+xx86_64
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"Link /Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS Restore5797f36d2b59b341^1f86126e2b59b341^---0#0#0#--853"Ld "build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS Restore" normal x86_64    cd "/Users/John/Desktop/projects/iOS Restore"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/clang -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -filelist "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS Restore.LinkFileList" -mmacosx-version-min=10.6 -framework MobileDevice -framework Cocoa -o "/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/Objects-normal/x86_64/iOS Restore"
+
+CProcessInfoPlistFile "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Info.plist" "iOS Restore/iOS Restore-Info.plist"
+s324610925.024148
+e324610925.027633
+r1
+xProcessInfoPlistFile
+x/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Info.plist
+xiOS Restore/iOS Restore-Info.plist
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection42"Process iOS Restore/iOS Restore-Info.plista644066d2b59b341^d811076d2b59b341^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS%20Restore-Info.plist0000000000000000^462"ProcessInfoPlistFile "build/Release/iOS Restore.app/Contents/Info.plist" "iOS Restore/iOS Restore-Info.plist"    cd "/Users/John/Desktop/projects/iOS Restore"    builtin-infoPlistUtility "iOS Restore/iOS Restore-Info.plist" -genpkginfo "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app/Contents/Info.plist"
+
+CProcessPCH "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cctpxzgaxvpexydptcsfwwxsvewk/iOS Restore-Prefix.pch.pth" "iOS Restore/iOS Restore-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s324610925.029438
+e324610925.800231
+r1
+xProcessPCH
+x/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cctpxzgaxvpexydptcsfwwxsvewk/iOS Restore-Prefix.pch.pth
+xiOS Restore/iOS Restore-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile iOS Restore/iOS Restore-Prefix.pch529c076d2b59b341^77d8cc6d2b59b341^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS%20Restore-Prefix.pch0000000000000000^1817"ProcessPCH "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cctpxzgaxvpexydptcsfwwxsvewk/iOS Restore-Prefix.pch.pth" "iOS Restore/iOS Restore-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -DIBOutlet=__attribute__((iboutlet)) -DIBOutletCollection(ClassName)=__attribute__((iboutletcollection)) -DIBAction=void)__attribute__((ibaction) "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/i386" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -c "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS Restore-Prefix.pch" -o "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cctpxzgaxvpexydptcsfwwxsvewk/iOS Restore-Prefix.pch.pth"
+
+CProcessPCH "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cwdchnkfmeozenfhavbghwufjbtq/iOS Restore-Prefix.pch.pth" "iOS Restore/iOS Restore-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s324610925.029423
+e324610925.852522
+r1
+xProcessPCH
+x/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cwdchnkfmeozenfhavbghwufjbtq/iOS Restore-Prefix.pch.pth
+xiOS Restore/iOS Restore-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile iOS Restore/iOS Restore-Prefix.pch999b076d2b59b341^508cdc6d2b59b341^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS%20Restore-Prefix.pch0000000000000000^1671"ProcessPCH "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cwdchnkfmeozenfhavbghwufjbtq/iOS Restore-Prefix.pch.pth" "iOS Restore/iOS Restore-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/i386" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -c "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS Restore-Prefix.pch" -o "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-cwdchnkfmeozenfhavbghwufjbtq/iOS Restore-Prefix.pch.pth"
+
+CProcessPCH "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-ftifacjzplbbbffthlxdmytdqjxn/iOS Restore-Prefix.pch.pth" "iOS Restore/iOS Restore-Prefix.pch" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s324610925.029444
+e324610925.723378
+r1
+xProcessPCH
+x/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-ftifacjzplbbbffthlxdmytdqjxn/iOS Restore-Prefix.pch.pth
+xiOS Restore/iOS Restore-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile iOS Restore/iOS Restore-Prefix.pch1fa0076d2b59b341^772db96d2b59b341^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS%20Restore-Prefix.pch0000000000000000^1823"ProcessPCH "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-ftifacjzplbbbffthlxdmytdqjxn/iOS Restore-Prefix.pch.pth" "iOS Restore/iOS Restore-Prefix.pch" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.analyzer    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -DIBOutlet=__attribute__((iboutlet)) -DIBOutletCollection(ClassName)=__attribute__((iboutletcollection)) -DIBAction=void)__attribute__((ibaction) "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/x86_64" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -c "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS Restore-Prefix.pch" -o "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-ftifacjzplbbbffthlxdmytdqjxn/iOS Restore-Prefix.pch.pth"
+
+CProcessPCH "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-fvptcakarsntphfdtpixckmmpiyy/iOS Restore-Prefix.pch.pth" "iOS Restore/iOS Restore-Prefix.pch" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s324610925.029213
+e324610925.807990
+r1
+xProcessPCH
+x/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-fvptcakarsntphfdtpixckmmpiyy/iOS Restore-Prefix.pch.pth
+xiOS Restore/iOS Restore-Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile iOS Restore/iOS Restore-Prefix.pch4294076d2b59b341^45d6ce6d2b59b341^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/John/Desktop/projects/iOS%20Restore/iOS%20Restore/iOS%20Restore-Prefix.pch0000000000000000^1677"ProcessPCH "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-fvptcakarsntphfdtpixckmmpiyy/iOS Restore-Prefix.pch.pth" "iOS Restore/iOS Restore-Prefix.pch" normal x86_64 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/John/Desktop/projects/iOS Restore"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x objective-c-header -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -isysroot /Developer/SDKs/MacOSX10.6.sdk -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/iOS Restore.hmap" "-I/Users/John/Desktop/projects/iOS Restore/build/Release/include" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources/x86_64" "-I/Users/John/Desktop/projects/iOS Restore/build/iOS Restore.build/Release/iOS Restore.build/DerivedSources" "-F/Users/John/Desktop/projects/iOS Restore/build/Release" "-F/Users/John/Desktop/projects/iOS Restore" -F/Developer/SDKs/MacOSX10.6.sdk/System/Library/PrivateFrameworks -c "/Users/John/Desktop/projects/iOS Restore/iOS Restore/iOS Restore-Prefix.pch" -o "/var/folders/Ju/JuaMn+BGGe0pVfPDjYMZjk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iOS Restore-Prefix-fvptcakarsntphfdtpixckmmpiyy/iOS Restore-Prefix.pch.pth"
+
+CTouch "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app"
+s324610926.705048
+e324610926.709353
+r1
+xTouch
+x/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app
+lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Touch /Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app658bb46e2b59b341^0798b56e2b59b341^---0#0#0#--183"Touch "build/Release/iOS Restore.app"    cd "/Users/John/Desktop/projects/iOS Restore"    /usr/bin/touch -c "/Users/John/Desktop/projects/iOS Restore/build/Release/iOS Restore.app"
+

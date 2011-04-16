@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		521B7CE01358ED2000CA95E8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521B7CDF1358ED2000CA95E8 /* Cocoa.framework */; };
+		521B7CEA1358ED2000CA95E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 521B7CE81358ED2000CA95E8 /* InfoPlist.strings */; };
+		521B7CED1358ED2000CA95E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 521B7CEC1358ED2000CA95E8 /* main.m */; };
+		521B7CF01358ED2000CA95E8 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 521B7CEE1358ED2000CA95E8 /* Credits.rtf */; };
+		521B7CF31358ED2000CA95E8 /* iOS_RestoreAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 521B7CF21358ED2000CA95E8 /* iOS_RestoreAppDelegate.m */; };
+		521B7CF61358ED2000CA95E8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 521B7CF41358ED2000CA95E8 /* MainWindow.xib */; };
+		521B7D181358F02900CA95E8 /* MobileDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521B7D171358F02900CA95E8 /* MobileDevice.framework */; };
+		521B7D1A1358F14B00CA95E8 /* IPSW-Large.png in Resources */ = {isa = PBXBuildFile; fileRef = 521B7D191358F14B00CA95E8 /* IPSW-Large.png */; };
+		521B7D1D1358F1A800CA95E8 /* iOSRestoreIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 521B7D1C1358F1A800CA95E8 /* iOSRestoreIcon.icns */; };
+		521B7D261358F32200CA95E8 /* CanHazFirmwareOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 521B7D251358F32200CA95E8 /* CanHazFirmwareOperation.m */; };
+		52BB6A2E1358FD5B004BB32C /* MDNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BB6A2D1358FD5B004BB32C /* MDNotificationCenter.m */; };
+		52BB6A5C13592000004BB32C /* red-orb.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BB6A5A13592000004BB32C /* red-orb.png */; };
+		52BB6A5D13592000004BB32C /* green-orb.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BB6A5B13592000004BB32C /* green-orb.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52BB6A3413590C25004BB32C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		521B7CDB1358ED2000CA95E8 /* iOS Restore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Restore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		521B7CDF1358ED2000CA95E8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		521B7CE21358ED2000CA95E8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		521B7CE31358ED2000CA95E8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		521B7CE41358ED2000CA95E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		521B7CE71358ED2000CA95E8 /* iOS Restore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS Restore-Info.plist"; sourceTree = "<group>"; };
+		521B7CE91358ED2000CA95E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		521B7CEB1358ED2000CA95E8 /* iOS Restore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS Restore-Prefix.pch"; sourceTree = "<group>"; };
+		521B7CEC1358ED2000CA95E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		521B7CEF1358ED2000CA95E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		521B7CF11358ED2000CA95E8 /* iOS_RestoreAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_RestoreAppDelegate.h; sourceTree = "<group>"; };
+		521B7CF21358ED2000CA95E8 /* iOS_RestoreAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_RestoreAppDelegate.m; sourceTree = "<group>"; };
+		521B7CF51358ED2000CA95E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		521B7D171358F02900CA95E8 /* MobileDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileDevice.framework; path = /System/Library/PrivateFrameworks/MobileDevice.framework; sourceTree = "<absolute>"; };
+		521B7D191358F14B00CA95E8 /* IPSW-Large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IPSW-Large.png"; sourceTree = "<group>"; };
+		521B7D1C1358F1A800CA95E8 /* iOSRestoreIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = iOSRestoreIcon.icns; sourceTree = "<group>"; };
+		521B7D241358F32200CA95E8 /* CanHazFirmwareOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanHazFirmwareOperation.h; sourceTree = "<group>"; };
+		521B7D251358F32200CA95E8 /* CanHazFirmwareOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanHazFirmwareOperation.m; sourceTree = "<group>"; };
+		52BB6A2C1358FD5B004BB32C /* MDNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDNotificationCenter.h; sourceTree = "<group>"; };
+		52BB6A2D1358FD5B004BB32C /* MDNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDNotificationCenter.m; sourceTree = "<group>"; };
+		52BB6A301358FD8B004BB32C /* MDListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDListener.h; sourceTree = "<group>"; };
+		52BB6A321358FE1D004BB32C /* MobileDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
+		52BB6A501359103F004BB32C /* ZipKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZipKit.framework; sourceTree = "<group>"; };
+		52BB6A5A13592000004BB32C /* red-orb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-orb.png"; sourceTree = "<group>"; };
+		52BB6A5B13592000004BB32C /* green-orb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-orb.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		521B7CD81358ED2000CA95E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521B7D181358F02900CA95E8 /* MobileDevice.framework in Frameworks */,
+				521B7CE01358ED2000CA95E8 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		521B7CD01358ED2000CA95E8 = {
+			isa = PBXGroup;
+			children = (
+				521B7CE51358ED2000CA95E8 /* iOS Restore */,
+				521B7CDE1358ED2000CA95E8 /* Frameworks */,
+				521B7CDC1358ED2000CA95E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		521B7CDC1358ED2000CA95E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				521B7CDB1358ED2000CA95E8 /* iOS Restore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		521B7CDE1358ED2000CA95E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52BB6A501359103F004BB32C /* ZipKit.framework */,
+				521B7CDF1358ED2000CA95E8 /* Cocoa.framework */,
+				521B7CE11358ED2000CA95E8 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		521B7CE11358ED2000CA95E8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				521B7D171358F02900CA95E8 /* MobileDevice.framework */,
+				521B7CE21358ED2000CA95E8 /* AppKit.framework */,
+				521B7CE31358ED2000CA95E8 /* CoreData.framework */,
+				521B7CE41358ED2000CA95E8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		521B7CE51358ED2000CA95E8 /* iOS Restore */ = {
+			isa = PBXGroup;
+			children = (
+				52BB6A321358FE1D004BB32C /* MobileDevice.h */,
+				521B7D1E1358F1C500CA95E8 /* Classes */,
+				521B7CE61358ED2000CA95E8 /* Supporting Files */,
+			);
+			path = "iOS Restore";
+			sourceTree = "<group>";
+		};
+		521B7CE61358ED2000CA95E8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				521B7D201358F1FA00CA95E8 /* Info */,
+				521B7D1F1358F1D100CA95E8 /* Interfaces */,
+				521B7CEB1358ED2000CA95E8 /* iOS Restore-Prefix.pch */,
+				521B7CEC1358ED2000CA95E8 /* main.m */,
+				521B7D1B1358F15300CA95E8 /* Images */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		521B7D1B1358F15300CA95E8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				52BB6A5A13592000004BB32C /* red-orb.png */,
+				52BB6A5B13592000004BB32C /* green-orb.png */,
+				521B7D1C1358F1A800CA95E8 /* iOSRestoreIcon.icns */,
+				521B7D191358F14B00CA95E8 /* IPSW-Large.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		521B7D1E1358F1C500CA95E8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				521B7D271358F33100CA95E8 /* Application Stuff */,
+				521B7D281358F33900CA95E8 /* Other */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		521B7D1F1358F1D100CA95E8 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				521B7CF41358ED2000CA95E8 /* MainWindow.xib */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		521B7D201358F1FA00CA95E8 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				521B7CE71358ED2000CA95E8 /* iOS Restore-Info.plist */,
+				521B7CE81358ED2000CA95E8 /* InfoPlist.strings */,
+				521B7CEE1358ED2000CA95E8 /* Credits.rtf */,
+			);
+			name = Info;
+			sourceTree = "<group>";
+		};
+		521B7D271358F33100CA95E8 /* Application Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				521B7CF11358ED2000CA95E8 /* iOS_RestoreAppDelegate.h */,
+				521B7CF21358ED2000CA95E8 /* iOS_RestoreAppDelegate.m */,
+			);
+			name = "Application Stuff";
+			sourceTree = "<group>";
+		};
+		521B7D281358F33900CA95E8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				52BB6A301358FD8B004BB32C /* MDListener.h */,
+				52BB6A2C1358FD5B004BB32C /* MDNotificationCenter.h */,
+				52BB6A2D1358FD5B004BB32C /* MDNotificationCenter.m */,
+				52BB6A5913591D5E004BB32C /* Threaded Operations */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		52BB6A5913591D5E004BB32C /* Threaded Operations */ = {
+			isa = PBXGroup;
+			children = (
+				521B7D241358F32200CA95E8 /* CanHazFirmwareOperation.h */,
+				521B7D251358F32200CA95E8 /* CanHazFirmwareOperation.m */,
+			);
+			name = "Threaded Operations";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		521B7CDA1358ED2000CA95E8 /* iOS Restore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 521B7CF91358ED2000CA95E8 /* Build configuration list for PBXNativeTarget "iOS Restore" */;
+			buildPhases = (
+				521B7CD71358ED2000CA95E8 /* Sources */,
+				521B7CD81358ED2000CA95E8 /* Frameworks */,
+				521B7CD91358ED2000CA95E8 /* Resources */,
+				52BB6A3413590C25004BB32C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS Restore";
+			productName = "iOS Restore";
+			productReference = 521B7CDB1358ED2000CA95E8 /* iOS Restore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		521B7CD21358ED2000CA95E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Springfield High School";
+			};
+			buildConfigurationList = 521B7CD51358ED2000CA95E8 /* Build configuration list for PBXProject "iOS Restore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 521B7CD01358ED2000CA95E8;
+			productRefGroup = 521B7CDC1358ED2000CA95E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				521B7CDA1358ED2000CA95E8 /* iOS Restore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		521B7CD91358ED2000CA95E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521B7CEA1358ED2000CA95E8 /* InfoPlist.strings in Resources */,
+				521B7CF01358ED2000CA95E8 /* Credits.rtf in Resources */,
+				521B7CF61358ED2000CA95E8 /* MainWindow.xib in Resources */,
+				521B7D1A1358F14B00CA95E8 /* IPSW-Large.png in Resources */,
+				521B7D1D1358F1A800CA95E8 /* iOSRestoreIcon.icns in Resources */,
+				52BB6A5C13592000004BB32C /* red-orb.png in Resources */,
+				52BB6A5D13592000004BB32C /* green-orb.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		521B7CD71358ED2000CA95E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521B7CED1358ED2000CA95E8 /* main.m in Sources */,
+				521B7CF31358ED2000CA95E8 /* iOS_RestoreAppDelegate.m in Sources */,
+				521B7D261358F32200CA95E8 /* CanHazFirmwareOperation.m in Sources */,
+				52BB6A2E1358FD5B004BB32C /* MDNotificationCenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		521B7CE81358ED2000CA95E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				521B7CE91358ED2000CA95E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		521B7CEE1358ED2000CA95E8 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				521B7CEF1358ED2000CA95E8 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		521B7CF41358ED2000CA95E8 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				521B7CF51358ED2000CA95E8 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		521B7CF71358ED2000CA95E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		521B7CF81358ED2000CA95E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		521B7CFA1358ED2000CA95E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Restore/iOS Restore-Prefix.pch";
+				INFOPLIST_FILE = "iOS Restore/iOS Restore-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		521B7CFB1358ED2000CA95E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOS Restore/iOS Restore-Prefix.pch";
+				INFOPLIST_FILE = "iOS Restore/iOS Restore-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		521B7CD51358ED2000CA95E8 /* Build configuration list for PBXProject "iOS Restore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521B7CF71358ED2000CA95E8 /* Debug */,
+				521B7CF81358ED2000CA95E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		521B7CF91358ED2000CA95E8 /* Build configuration list for PBXNativeTarget "iOS Restore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				521B7CFA1358ED2000CA95E8 /* Debug */,
+				521B7CFB1358ED2000CA95E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 521B7CD21358ED2000CA95E8 /* Project object */;
+}
