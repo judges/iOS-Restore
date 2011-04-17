@@ -23,7 +23,7 @@ typedef struct {
 
 #define NUM_APPLE_MOBILE_DEVICES 13
 
-APPLE_MOBILE_DEVICE APPLE_MOBILE_DEVICES[NUM_APPLE_MOBILE_DEVICES] = {
+static APPLE_MOBILE_DEVICE APPLE_MOBILE_DEVICES[NUM_APPLE_MOBILE_DEVICES] = {
     { "iPhone",         0x1290, "iPhone1,1",   "m68ap", 304222464,  310382848 },
     { "iPhone 3G",      0x1292, "iPhone1,2",   "n82ap", 304230656,  310391040 },
     { "iPhone 3G[s]",   0x1294, "iPhone2,1",   "n88ap", 35104,      35104 },
@@ -39,9 +39,6 @@ APPLE_MOBILE_DEVICE APPLE_MOBILE_DEVICES[NUM_APPLE_MOBILE_DEVICES] = {
     { "iPad 2(CDMA)",   0x12a3, "iPad2,3",     "k95ap", 33589568,   33589568 }
 };
 
-NSString *iOSRestoreGetDeviceConnectionType(uint16_t productID, uint32_t deviceID, BOOL isRestoreMode);
-APPLE_MOBILE_DEVICE iOSRestoreGetDeviceType(uint16_t productID, uint32_t deviceID);
-
 typedef struct {
     const char *name;
     uint16_t productID;
@@ -49,7 +46,7 @@ typedef struct {
 
 #define NUM_APPLE_USB_INTERFACES 6
 
-APPLE_USB_INTERFACE_TYPE APPLE_USB_INTERFACES[NUM_APPLE_USB_INTERFACES] = {
+static APPLE_USB_INTERFACE_TYPE APPLE_USB_INTERFACES[NUM_APPLE_USB_INTERFACES] = {
     { "Recovery Mode v1",   0x1280 },
     { "Recovery Mode v2",   0x1281 },
     { "Recovery Mode v3",   0x1282 },
@@ -58,12 +55,17 @@ APPLE_USB_INTERFACE_TYPE APPLE_USB_INTERFACES[NUM_APPLE_USB_INTERFACES] = {
     { "DFU/WTF v2",         0x1227 }
 };
 
-typedef enum {
+enum {
     kAMDeviceNormalMode = 0,
     kAMDeviceRestoreMode = 1,
     kAMDeviceRecoveryMode = 2,
     kAMDeviceDFUMode = 3,
     kAMDeviceNoMode = 4
-} AMDeviceMode;
+};
+typedef NSInteger AMDeviceMode;
+
+
+NSString *iOSRestoreGetDeviceConnectionType(uint16_t productID, uint32_t deviceID, BOOL isRestoreMode);
+APPLE_MOBILE_DEVICE *iOSRestoreGetDeviceType(uint16_t productID, uint32_t deviceID);
 
 #endif /* DEVICEIDENTIFICATION_H */

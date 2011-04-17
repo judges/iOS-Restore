@@ -10,9 +10,10 @@
 #import "MDListener.h"
 #import "MDNotificationCenter.h"
 #import "JRFWServerManifestGrabber.h"
+#import "JRIPSWUnzipper.h"
 
 
-@interface iOS_RestoreAppDelegate : NSObject <NSApplicationDelegate, MDListener, NSTabViewDelegate, JRFWServerManifestGrabberDelegate> {
+@interface iOS_RestoreAppDelegate : NSObject <NSApplicationDelegate, MDListener, NSTabViewDelegate, JRFWServerManifestGrabberDelegate, JRIPSWUnzipperDelegate> {
 @private
     NSWindow *window;
     NSImageView *statusOrbView;
@@ -22,10 +23,13 @@
     IBOutlet NSProgressIndicator *serverDownloadBar;
     JRFWServerManifestGrabber *manifestGrabber;
     IBOutlet NSPopUpButton *serverFWChoiceButton;
+    IBOutlet NSTabView *restoreTypeTabView;
+    NSDictionary *_currentServerManifest;
 }
 
 - (void)updateDeviceLabelForDetachedDevice;
 - (void)updateDeviceLabelForProductID:(uint16_t)pid deviceID:(uint32_t)did isRestore:(BOOL)isRestore;
+- (void)populateServerFirmwarePopupBox;
 
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSImageView *statusOrbView;

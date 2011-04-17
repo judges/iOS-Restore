@@ -18,24 +18,19 @@
 		521B7D1D1358F1A800CA95E8 /* iOSRestoreIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 521B7D1C1358F1A800CA95E8 /* iOSRestoreIcon.icns */; };
 		52555348135ACB300073E882 /* MDDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 52555347135ACB300073E882 /* MDDeviceManager.m */; };
 		5255534D135AD6090073E882 /* DeviceIdentification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5255534C135AD6090073E882 /* DeviceIdentification.m */; };
+		52A1E7BB135B8C65005ECD31 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A1E7BA135B8C65005ECD31 /* ZipArchive.m */; };
+		52A1E7C7135B8CAB005ECD31 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 52A1E7BF135B8CAB005ECD31 /* ioapi.c */; };
+		52A1E7C8135B8CAB005ECD31 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 52A1E7C1135B8CAB005ECD31 /* mztools.c */; };
+		52A1E7C9135B8CAB005ECD31 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 52A1E7C3135B8CAB005ECD31 /* unzip.c */; };
+		52A1E7CA135B8CAB005ECD31 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 52A1E7C5135B8CAB005ECD31 /* zip.c */; };
+		52A1E7CC135B8CD2005ECD31 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 52A1E7CB135B8CD2005ECD31 /* libz.dylib */; };
+		52B3EB33135B7B9D00FB33C5 /* JRIPSWUnzipper.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B3EB32135B7B9D00FB33C5 /* JRIPSWUnzipper.m */; };
 		52BB6A2E1358FD5B004BB32C /* MDNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52BB6A2D1358FD5B004BB32C /* MDNotificationCenter.m */; };
 		52BB6A5C13592000004BB32C /* red-orb.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BB6A5A13592000004BB32C /* red-orb.png */; };
 		52BB6A5D13592000004BB32C /* green-orb.png in Resources */ = {isa = PBXBuildFile; fileRef = 52BB6A5B13592000004BB32C /* green-orb.png */; };
 		52F12272135949E200F3C1B9 /* JRRestoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F12271135949E200F3C1B9 /* JRRestoreController.m */; };
 		52F1227E135A3D1400F3C1B9 /* JRFWServerManifestGrabber.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F1227D135A3D1400F3C1B9 /* JRFWServerManifestGrabber.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		52BB6A3413590C25004BB32C /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		521B7CDB1358ED2000CA95E8 /* iOS Restore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Restore.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,11 +52,24 @@
 		52555346135ACB300073E882 /* MDDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDDeviceManager.h; sourceTree = "<group>"; };
 		52555347135ACB300073E882 /* MDDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDDeviceManager.m; sourceTree = "<group>"; };
 		5255534C135AD6090073E882 /* DeviceIdentification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceIdentification.m; sourceTree = "<group>"; };
+		52A1E7B9135B8C65005ECD31 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		52A1E7BA135B8C65005ECD31 /* ZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		52A1E7BE135B8CAB005ECD31 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		52A1E7BF135B8CAB005ECD31 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		52A1E7C0135B8CAB005ECD31 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		52A1E7C1135B8CAB005ECD31 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		52A1E7C2135B8CAB005ECD31 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		52A1E7C3135B8CAB005ECD31 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		52A1E7C4135B8CAB005ECD31 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		52A1E7C5135B8CAB005ECD31 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		52A1E7C6135B8CAB005ECD31 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		52A1E7CB135B8CD2005ECD31 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		52B3EB31135B7B9D00FB33C5 /* JRIPSWUnzipper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRIPSWUnzipper.h; sourceTree = "<group>"; };
+		52B3EB32135B7B9D00FB33C5 /* JRIPSWUnzipper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRIPSWUnzipper.m; sourceTree = "<group>"; };
 		52BB6A2C1358FD5B004BB32C /* MDNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDNotificationCenter.h; sourceTree = "<group>"; };
 		52BB6A2D1358FD5B004BB32C /* MDNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDNotificationCenter.m; sourceTree = "<group>"; };
 		52BB6A301358FD8B004BB32C /* MDListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDListener.h; sourceTree = "<group>"; };
 		52BB6A321358FE1D004BB32C /* MobileDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileDevice.h; sourceTree = "<group>"; };
-		52BB6A501359103F004BB32C /* ZipKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZipKit.framework; sourceTree = "<group>"; };
 		52BB6A5A13592000004BB32C /* red-orb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-orb.png"; sourceTree = "<group>"; };
 		52BB6A5B13592000004BB32C /* green-orb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "green-orb.png"; sourceTree = "<group>"; };
 		52F1226E1359437900F3C1B9 /* DeviceIdentification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceIdentification.h; sourceTree = "<group>"; };
@@ -76,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A1E7CC135B8CD2005ECD31 /* libz.dylib in Frameworks */,
 				521B7D181358F02900CA95E8 /* MobileDevice.framework in Frameworks */,
 				521B7CE01358ED2000CA95E8 /* Cocoa.framework in Frameworks */,
 			);
@@ -104,7 +113,7 @@
 		521B7CDE1358ED2000CA95E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				52BB6A501359103F004BB32C /* ZipKit.framework */,
+				52A1E7CB135B8CD2005ECD31 /* libz.dylib */,
 				521B7CDF1358ED2000CA95E8 /* Cocoa.framework */,
 				521B7CE11358ED2000CA95E8 /* Other Frameworks */,
 			);
@@ -158,6 +167,7 @@
 		521B7D1E1358F1C500CA95E8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				52A1E7B8135B8C56005ECD31 /* ZipArchive */,
 				521B7D271358F33100CA95E8 /* Application Stuff */,
 				521B7D281358F33900CA95E8 /* Other */,
 			);
@@ -203,8 +213,36 @@
 				52F1227D135A3D1400F3C1B9 /* JRFWServerManifestGrabber.m */,
 				52555346135ACB300073E882 /* MDDeviceManager.h */,
 				52555347135ACB300073E882 /* MDDeviceManager.m */,
+				52B3EB31135B7B9D00FB33C5 /* JRIPSWUnzipper.h */,
+				52B3EB32135B7B9D00FB33C5 /* JRIPSWUnzipper.m */,
 			);
 			name = Other;
+			sourceTree = "<group>";
+		};
+		52A1E7B8135B8C56005ECD31 /* ZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				52A1E7BD135B8CAB005ECD31 /* minizip */,
+				52A1E7B9135B8C65005ECD31 /* ZipArchive.h */,
+				52A1E7BA135B8C65005ECD31 /* ZipArchive.m */,
+			);
+			name = ZipArchive;
+			sourceTree = "<group>";
+		};
+		52A1E7BD135B8CAB005ECD31 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				52A1E7BE135B8CAB005ECD31 /* crypt.h */,
+				52A1E7BF135B8CAB005ECD31 /* ioapi.c */,
+				52A1E7C0135B8CAB005ECD31 /* ioapi.h */,
+				52A1E7C1135B8CAB005ECD31 /* mztools.c */,
+				52A1E7C2135B8CAB005ECD31 /* mztools.h */,
+				52A1E7C3135B8CAB005ECD31 /* unzip.c */,
+				52A1E7C4135B8CAB005ECD31 /* unzip.h */,
+				52A1E7C5135B8CAB005ECD31 /* zip.c */,
+				52A1E7C6135B8CAB005ECD31 /* zip.h */,
+			);
+			path = minizip;
 			sourceTree = "<group>";
 		};
 		52F1226B1359436400F3C1B9 /* C Stuff */ = {
@@ -227,7 +265,6 @@
 				521B7CD71358ED2000CA95E8 /* Sources */,
 				521B7CD81358ED2000CA95E8 /* Frameworks */,
 				521B7CD91358ED2000CA95E8 /* Resources */,
-				52BB6A3413590C25004BB32C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -292,6 +329,12 @@
 				52F1227E135A3D1400F3C1B9 /* JRFWServerManifestGrabber.m in Sources */,
 				52555348135ACB300073E882 /* MDDeviceManager.m in Sources */,
 				5255534D135AD6090073E882 /* DeviceIdentification.m in Sources */,
+				52B3EB33135B7B9D00FB33C5 /* JRIPSWUnzipper.m in Sources */,
+				52A1E7BB135B8C65005ECD31 /* ZipArchive.m in Sources */,
+				52A1E7C7135B8CAB005ECD31 /* ioapi.c in Sources */,
+				52A1E7C8135B8CAB005ECD31 /* mztools.c in Sources */,
+				52A1E7C9135B8CAB005ECD31 /* unzip.c in Sources */,
+				52A1E7CA135B8CAB005ECD31 /* zip.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +421,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS Restore/iOS Restore-Prefix.pch";
 				INFOPLIST_FILE = "iOS Restore/iOS Restore-Info.plist";
+				OTHER_CFLAGS = "-Wno-unused-variable";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -398,6 +443,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS Restore/iOS Restore-Prefix.pch";
 				INFOPLIST_FILE = "iOS Restore/iOS Restore-Info.plist";
+				OTHER_CFLAGS = "-Wno-unused-variable";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

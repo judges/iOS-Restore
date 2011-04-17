@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JRIPSWUnzipper.h"
 #import "MDListener.h"
+
 
 @interface JRRestoreController : NSObject <MDListener> {
 @private

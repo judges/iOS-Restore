@@ -7,6 +7,8 @@
 //
 
 #import "MDNotificationCenter.h"
+#import "MDDeviceManager.h"
+
 
 /* Callbacks */
 
@@ -96,6 +98,8 @@ static MDNotificationCenter *sharedMDNotificationCenter = nil;
     self = [super init];
     if (self) {
         _listeners = [[NSMutableSet alloc] init];
+        
+        [self addListener:[MDDeviceManager sharedInstance]];
         
         AMDeviceNotificationSubscribe(device_notification, 0, 0, 0, &subscription);
         AMRestoreRegisterForDeviceNotifications(dfu_connected, recovery_connected, dfu_disconnected, recovery_disconnected, 0, NULL);

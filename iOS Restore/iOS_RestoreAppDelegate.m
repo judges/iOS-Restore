@@ -9,6 +9,7 @@
 #import "iOS_RestoreAppDelegate.h"
 #import "JRFWServerManifestGrabber.h"
 #import "DeviceIdentification.h"
+#import "MDDeviceManager.h"
 
 
 @implementation iOS_RestoreAppDelegate
@@ -35,11 +36,14 @@ static NSImage *greenOrbImage = nil;
     manifestGrabber = [[JRFWServerManifestGrabber alloc] init];
     manifestGrabber.delegate = self;
     
+    _currentServerManifest = nil;
+    
     [[MDNotificationCenter sharedInstance] addListener:self];
 }
 
 - (void)labelDeviceAs:(NSString *)name {
     [connectedDeviceLabel setStringValue:name];
+    [self populateServerFirmwarePopupBox];
 }
 
 - (void)updateDeviceLabelForDetachedDevice {
@@ -96,17 +100,55 @@ static NSImage *greenOrbImage = nil;
         if(!downloadedServerInfo) {
             [NSApp beginSheet:serverDownloadSheet modalForWindow:window modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:NULL];
             [serverDownloadBar startAnimation:self];
-            [manifestGrabber beginGrabbing];
+            [manifestGrabber performSelector:@selector(beginGrabbing) withObject:nil afterDelay:1.0];
         }
+    }
+}
+
+- (void)populateServerFirmwarePopupBox {
+    APPLE_MOBILE_DEVICE *deviceType = NULL;
+    
+    [serverFWChoiceButton removeAllItems];
+    
+    switch([[MDDeviceManager sharedInstance] currentDeviceMode]) {
+        case kAMDeviceNormalMode: {
+            deviceType = iOSRestoreGetDeviceType(AMDeviceUSBProductID([[MDDeviceManager sharedInstance] currentNormalDevice]), 0);
+        } break;
+        case kAMDeviceRecoveryMode: {
+            deviceType = iOSRestoreGetDeviceType(AMRecoveryModeDeviceGetProductID([[MDDeviceManager sharedInstance] currentRecoveryDevice]), AMRecoveryModeDeviceGetProductType([[MDDeviceManager sharedInstance] currentRecoveryDevice]));
+        } break;
+        case kAMDeviceDFUMode: {
+            deviceType = iOSRestoreGetDeviceType(AMDFUModeDeviceGetProductID([[MDDeviceManager sharedInstance] currentDFUDevice]), AMDFUModeDeviceGetProductType([[MDDeviceManager sharedInstance] currentDFUDevice]));
+        } break;
+    }
+    
+    if(deviceType == NULL || _currentServerManifest == nil) {
+        [serverFWChoiceButton addItemWithTitle:@"None Available"];
+        return;
+    }
+    
+    for(NSString *firmwareVersion in [[_currentServerManifest objectForKey:[NSString stringWithUTF8String:deviceType->model]] allKeys]) {
+        [serverFWChoiceButton addItemWithTitle:firmwareVersion];
     }
 }
 
 - (void)serverManifestGrabberDidFinishWithManifest:(NSDictionary *)manifest {
     [NSApp endSheet:serverDownloadSheet];
+    downloadedServerInfo = YES;
+    
+    if(_currentServerManifest != nil) {
+        [_currentServerManifest release];
+    } 
+    
+    _currentServerManifest = [manifest retain];
+    
+    // populate popup box
+    [self populateServerFirmwarePopupBox];
 }
 
 - (void)serverManifestGrabberFailedWithErrorDescription:(NSString *)errorDescription {
     [NSApp endSheet:serverDownloadSheet];
+    [restoreTypeTabView selectTabViewItemAtIndex:0];
 }
 
 - (void)dealloc {

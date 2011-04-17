@@ -20,14 +20,6 @@ static MDDeviceManager *sharedMDDeviceManager = nil;
 @synthesize currentRestoreDevice;
 @synthesize currentRecoveryDevice;
 
-- (id)init {
-    if((self = [super init]) != nil) {
-        [[MDNotificationCenter sharedInstance] addListener:self];
-    }
-    
-    return self;
-}
-
 + (MDDeviceManager *)sharedInstance {
     @synchronized(self) {
         if (!sharedMDDeviceManager) {
