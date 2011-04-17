@@ -72,6 +72,10 @@ static NSImage *greenOrbImage = nil;
     [self updateDeviceLabelForProductID:AMDeviceUSBProductID((AMDeviceRef)device) deviceID:0 isRestore:YES];
 }
 
+- (void)restoreDeviceDetached:(AMRestoreModeDeviceRef)device {
+    [self updateDeviceLabelForDetachedDevice];
+}
+
 - (void)recoveryDeviceAttached:(AMRecoveryModeDeviceRef)device {
     [self updateDeviceLabelForProductID:AMRecoveryModeDeviceGetProductID(device) deviceID:AMRecoveryModeDeviceGetProductType(device) isRestore:NO];
 }
@@ -149,6 +153,23 @@ static NSImage *greenOrbImage = nil;
 - (void)serverManifestGrabberFailedWithErrorDescription:(NSString *)errorDescription {
     [NSApp endSheet:serverDownloadSheet];
     [restoreTypeTabView selectTabViewItemAtIndex:0];
+}
+
+- (IBAction)browseForIPSW:(id)sender {
+    NSOpenPanel *browser = [NSOpenPanel openPanel];
+    [browser setAllowsMultipleSelection:NO];
+    [browser setAllowedFileTypes:[NSArray arrayWithObject:@"ipsw"]];
+    [browser setAllowsOtherFileTypes:NO];
+    [browser setPrompt:@"Restore"];
+    [browser setCanChooseFiles:YES];
+    [browser setTitle:@"Please choose the firmware file you wish to restore to."];
+    [browser setDirectoryURL:[NSURL URLWithString:NSHomeDirectory()]];
+    
+    [NSApp runModalForWindow:browser];
+}
+
+- (IBAction)attemptRestore:(id)sender {
+    
 }
 
 - (void)dealloc {

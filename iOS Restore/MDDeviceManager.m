@@ -20,6 +20,8 @@ static MDDeviceManager *sharedMDDeviceManager = nil;
 @synthesize currentRestoreDevice;
 @synthesize currentRecoveryDevice;
 
+@synthesize currentDeviceType;
+
 + (MDDeviceManager *)sharedInstance {
     @synchronized(self) {
         if (!sharedMDDeviceManager) {
@@ -47,40 +49,49 @@ static MDDeviceManager *sharedMDDeviceManager = nil;
 - (void)normalDeviceAttached:(AMDeviceRef)device {
     currentNormalDevice = device;
     currentDeviceMode = kAMDeviceNormalMode;
+    currentDeviceType = iOSRestoreGetDeviceType(AMDeviceUSBProductID(device), 0);
 }
 
 - (void)normalDeviceDetached:(AMDeviceRef)device {
-    if(currentDeviceMode == kAMDeviceNormalMode) {
-        currentNormalDevice = NULL;
-    } else {
-        currentRestoreDevice = NULL;
-    }
-
+    currentNormalDevice = NULL;
     currentDeviceMode = kAMDeviceNoMode;
+    currentDeviceType = NULL;
 }
 
 - (void)restoreDeviceAttached:(AMRestoreModeDeviceRef)device {
     currentRestoreDevice = device;
+    currentDeviceMode = kAMDeviceRestoreMode;
+    currentDeviceType = iOSRestoreGetDeviceType(AMDeviceUSBProductID((AMDeviceRef)device), 0);
+}
+
+- (void)restoreDeviceDetached:(AMRestoreModeDeviceRef)device {
+    currentRestoreDevice = NULL;
+    currentDeviceMode = kAMDeviceNoMode;
+    currentDeviceType = NULL;
 }
 
 - (void)recoveryDeviceAttached:(AMRecoveryModeDeviceRef)device {
     currentRecoveryDevice = device;
     currentDeviceMode = kAMDeviceRecoveryMode;
+    currentDeviceType = iOSRestoreGetDeviceType(AMRecoveryModeDeviceGetProductID(device), AMRecoveryModeDeviceGetProductType(device));
 }
 
 - (void)recoveryDeviceDetached:(AMRecoveryModeDeviceRef)device {
     currentRecoveryDevice = NULL;
     currentDeviceMode = kAMDeviceNoMode;
+    currentDeviceType = NULL;
 }
 
 - (void)dfuDeviceAttached:(AMDFUModeDeviceRef)device {
     currentDFUDevice = device;
     currentDeviceMode = kAMDeviceDFUMode;
+    currentDeviceType = iOSRestoreGetDeviceType(AMDFUModeDeviceGetProductID(device), AMDFUModeDeviceGetProductType(device));
 }
 
 - (void)dfuDeviceDetached:(AMDFUModeDeviceRef)device {
     currentDFUDevice = NULL;
     currentDeviceMode = kAMDeviceNoMode;
+    currentDeviceType = NULL;
 }
 
 @end

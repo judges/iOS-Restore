@@ -54,7 +54,13 @@ void device_notification(AMDeviceNotificationRef notification) {
             }
         } break;
         case kAMDeviceNotificationMessageDisconnected: {
-            [[MDNotificationCenter sharedInstance] normalDeviceDetached:device];
+            switch([[MDDeviceManager sharedInstance] currentDeviceMode]) {
+                case kAMDeviceNormalMode:
+                    [[MDNotificationCenter sharedInstance] normalDeviceDetached:device];
+                case kAMDeviceRestoreMode:
+                    [[MDNotificationCenter sharedInstance] restoreDeviceDetached:(AMRestoreModeDeviceRef)device];
+            }
+            
         } break;
         default:
             break;
@@ -162,6 +168,10 @@ static MDNotificationCenter *sharedMDNotificationCenter = nil;
 
 - (void)restoreDeviceAttached:(AMRestoreModeDeviceRef)device {
     [self sendMessageToListeners:_cmd withDevice:device];
+}
+
+- (void)restoreDeviceDetached:(AMRestoreModeDeviceRef)device {
+    
 }
 
 - (void)recoveryDeviceAttached:(AMRecoveryModeDeviceRef)device {

@@ -31,6 +31,9 @@
 - (void)updateDeviceLabelForProductID:(uint16_t)pid deviceID:(uint32_t)did isRestore:(BOOL)isRestore;
 - (void)populateServerFirmwarePopupBox;
 
+- (IBAction)browseForIPSW:(id)sender;
+- (IBAction)attemptRestore:(id)sender;
+
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSImageView *statusOrbView;
 

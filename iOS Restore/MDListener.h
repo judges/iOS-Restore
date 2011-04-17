@@ -18,8 +18,7 @@
 - (void)normalDeviceConnectionError;
 
 - (void)restoreDeviceAttached:(AMRestoreModeDeviceRef)device;
-// It is impossible to differentiate between restore and normal mode detachment, will
-//  default to using normal
+- (void)restoreDeviceDetached:(AMRestoreModeDeviceRef)device;
 
 - (void)recoveryDeviceAttached:(AMRecoveryModeDeviceRef)device;
 - (void)recoveryDeviceDetached:(AMRecoveryModeDeviceRef)device;

@@ -13,8 +13,7 @@
 
 @interface JRRestoreController : NSObject <MDListener> {
 @private
+
 }
-
-
 
 @end

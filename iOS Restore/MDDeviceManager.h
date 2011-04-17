@@ -19,6 +19,7 @@
     AMRestoreModeDeviceRef currentRestoreDevice;
     AMRecoveryModeDeviceRef currentRecoveryDevice;
     AMDFUModeDeviceRef currentDFUDevice;
+    APPLE_MOBILE_DEVICE *currentDeviceType;
 }
 
 + (MDDeviceManager *)sharedInstance;
@@ -28,5 +29,7 @@
 @property (readonly) AMRestoreModeDeviceRef currentRestoreDevice;
 @property (readonly) AMRecoveryModeDeviceRef currentRecoveryDevice;
 @property (readonly) AMDFUModeDeviceRef currentDFUDevice;
+
+@property (readonly) APPLE_MOBILE_DEVICE *currentDeviceType;
 
 @end
