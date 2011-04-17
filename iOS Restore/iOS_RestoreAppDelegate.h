@@ -9,13 +9,19 @@
 #import <Cocoa/Cocoa.h>
 #import "MDListener.h"
 #import "MDNotificationCenter.h"
+#import "JRFWServerManifestGrabber.h"
 
 
-@interface iOS_RestoreAppDelegate : NSObject <NSApplicationDelegate, MDListener, NSTabViewDelegate> {
+@interface iOS_RestoreAppDelegate : NSObject <NSApplicationDelegate, MDListener, NSTabViewDelegate, JRFWServerManifestGrabberDelegate> {
 @private
     NSWindow *window;
     NSImageView *statusOrbView;
     IBOutlet NSTextField *connectedDeviceLabel;
+    IBOutlet NSPanel *serverDownloadSheet;
+    BOOL downloadedServerInfo;
+    IBOutlet NSProgressIndicator *serverDownloadBar;
+    JRFWServerManifestGrabber *manifestGrabber;
+    IBOutlet NSPopUpButton *serverFWChoiceButton;
 }
 
 - (void)updateDeviceLabelForDetachedDevice;

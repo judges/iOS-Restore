@@ -6,6 +6,10 @@
 //  Copyright 2011 Springfield High School. All rights reserved.
 //
 
+#ifndef DEVICEIDENTIFICATION_H
+#define DEVICEIDENTIFICATION_H
+
+#import <Foundation/Foundation.h>
 #include <stdint.h>
 
 typedef struct {
@@ -35,6 +39,9 @@ APPLE_MOBILE_DEVICE APPLE_MOBILE_DEVICES[NUM_APPLE_MOBILE_DEVICES] = {
     { "iPad 2(CDMA)",   0x12a3, "iPad2,3",     "k95ap", 33589568,   33589568 }
 };
 
+NSString *iOSRestoreGetDeviceConnectionType(uint16_t productID, uint32_t deviceID, BOOL isRestoreMode);
+APPLE_MOBILE_DEVICE iOSRestoreGetDeviceType(uint16_t productID, uint32_t deviceID);
+
 typedef struct {
     const char *name;
     uint16_t productID;
@@ -51,49 +58,12 @@ APPLE_USB_INTERFACE_TYPE APPLE_USB_INTERFACES[NUM_APPLE_USB_INTERFACES] = {
     { "DFU/WTF v2",         0x1227 }
 };
 
+typedef enum {
+    kAMDeviceNormalMode = 0,
+    kAMDeviceRestoreMode = 1,
+    kAMDeviceRecoveryMode = 2,
+    kAMDeviceDFUMode = 3,
+    kAMDeviceNoMode = 4
+} AMDeviceMode;
 
-NSString *iOSRestoreGetDeviceConnectionType(uint16_t productID, uint32_t deviceID, BOOL isRestoreMode) {
-    NSString *modeName = (isRestoreMode ? @"Restore" : @"Normal");
-    NSString *deviceName = @"Unknown Device";
-    
-    
-    BOOL foundDevice = NO;
-    for(int i=0;i<NUM_APPLE_USB_INTERFACES;++i) {
-        if(APPLE_USB_INTERFACES[i].productID == productID) {
-            if(i < 4) {
-                modeName = @"Recovery";
-                
-                for(int i=0;i<NUM_APPLE_MOBILE_DEVICES;++i) {
-                    if(APPLE_MOBILE_DEVICES[i].recoveryDeviceID == deviceID) {
-                        deviceName = [NSString stringWithUTF8String:APPLE_MOBILE_DEVICES[i].name];
-                        foundDevice = YES;
-                    }
-                }
-                
-                break;
-            } else {
-                modeName = @"DFU";
-                
-                for(int i=0;i<NUM_APPLE_MOBILE_DEVICES;++i) {
-                    if(APPLE_MOBILE_DEVICES[i].dfuDeviceID == deviceID) {
-                        deviceName = [NSString stringWithUTF8String:APPLE_MOBILE_DEVICES[i].name];
-                        foundDevice = YES;
-                    }
-                }
-                
-                break;
-            }
-        }
-    }
-    
-    if(!foundDevice) {
-        // it's normal/restore
-        for(int i=0;i<NUM_APPLE_MOBILE_DEVICES;++i) {
-            if(APPLE_MOBILE_DEVICES[i].productID == productID) {
-                deviceName = deviceName = [NSString stringWithUTF8String:APPLE_MOBILE_DEVICES[i].name];
-            }
-        }
-    }
-    
-    return [NSString stringWithFormat:@"%@: %@ Mode", deviceName, modeName];
-}
+#endif /* DEVICEIDENTIFICATION_H */

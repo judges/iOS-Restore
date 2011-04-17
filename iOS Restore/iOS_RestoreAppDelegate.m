@@ -7,7 +7,9 @@
 //
 
 #import "iOS_RestoreAppDelegate.h"
+#import "JRFWServerManifestGrabber.h"
 #import "DeviceIdentification.h"
+
 
 @implementation iOS_RestoreAppDelegate
 
@@ -21,12 +23,17 @@ static NSImage *greenOrbImage = nil;
     redOrbImage = [[NSImage imageNamed:@"red-orb.png"] retain];
     greenOrbImage = [[NSImage imageNamed:@"green-orb.png"] retain];
     
+    downloadedServerInfo = NO;
+    
     [connectedDeviceLabel setStringValue:@"No Device Connected"];
     
     [window setContentBorderThickness:25.0 forEdge:NSMinYEdge];
     [window setMovableByWindowBackground:YES];
     
     [statusOrbView setImage:redOrbImage];
+    
+    manifestGrabber = [[JRFWServerManifestGrabber alloc] init];
+    manifestGrabber.delegate = self;
     
     [[MDNotificationCenter sharedInstance] addListener:self];
 }
@@ -40,11 +47,10 @@ static NSImage *greenOrbImage = nil;
     [self labelDeviceAs:@"No Device Connected"];
 }
 
-- (void)updateDeviceLabelForProductID:(uint16_t)pid deviceID:(uint32_t)did isRestore:(BOOL)isRestore{
+- (void)updateDeviceLabelForProductID:(uint16_t)pid deviceID:(uint32_t)did isRestore:(BOOL)isRestore {
     [statusOrbView setImage:greenOrbImage];
     [self labelDeviceAs:iOSRestoreGetDeviceConnectionType(pid, did, isRestore)];
 }
-
                       
 - (void)normalDeviceAttached:(AMDeviceRef)device {
     [self updateDeviceLabelForProductID:AMDeviceUSBProductID(device) deviceID:0 isRestore:NO];
@@ -78,8 +84,37 @@ static NSImage *greenOrbImage = nil;
     [self updateDeviceLabelForDetachedDevice];
 }
 
+- (void)sheetDidEnd:(NSWindow *)sheet returnCode:(NSInteger)returnCode contextInfo:(void *)contextInfo {
+    [serverDownloadBar stopAnimation:self];
+    [sheet orderOut:nil];
+}
+
 - (void)tabView:(NSTabView *)tabView didSelectTabViewItem:(NSTabViewItem *)tabViewItem {
+    NSInteger tabIndex = [tabView indexOfTabViewItem:tabViewItem];
     
+    if(tabIndex == 1) {
+        if(!downloadedServerInfo) {
+            [NSApp beginSheet:serverDownloadSheet modalForWindow:window modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:NULL];
+            [serverDownloadBar startAnimation:self];
+            [manifestGrabber beginGrabbing];
+        }
+    }
+}
+
+- (void)serverManifestGrabberDidFinishWithManifest:(NSDictionary *)manifest {
+    [NSApp endSheet:serverDownloadSheet];
+}
+
+- (void)serverManifestGrabberFailedWithErrorDescription:(NSString *)errorDescription {
+    [NSApp endSheet:serverDownloadSheet];
+}
+
+- (void)dealloc {
+    [manifestGrabber release];
+    [redOrbImage release];
+    [greenOrbImage release];
+    
+    [super dealloc];
 }
 
 @end

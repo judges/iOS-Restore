@@ -1,0 +1,32 @@
+//
+//  MDDeviceManager.h
+//  iOS Restore
+//
+//  Created by John Heaton on 4/17/11.
+//  Copyright 2011 Springfield High School. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "DeviceIdentification.h"
+#import "MobileDevice.h"
+#import "MDListener.h"
+
+
+@interface MDDeviceManager : NSObject <MDListener> {
+@private
+    AMDeviceMode currentDeviceMode;
+    AMDeviceRef currentNormalDevice;
+    AMRestoreModeDeviceRef currentRestoreDevice;
+    AMRecoveryModeDeviceRef currentRecoveryDevice;
+    AMDFUModeDeviceRef currentDFUDevice;
+}
+
++ (MDDeviceManager *)sharedInstance;
+
+@property (readonly) AMDeviceMode currentDeviceMode;
+@property (readonly) AMDeviceRef currentNormalDevice;
+@property (readonly) AMRestoreModeDeviceRef currentRestoreDevice;
+@property (readonly) AMRecoveryModeDeviceRef currentRecoveryDevice;
+@property (readonly) AMDFUModeDeviceRef currentDFUDevice;
+
+@end

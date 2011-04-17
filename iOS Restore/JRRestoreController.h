@@ -11,8 +11,6 @@
 
 @interface JRRestoreController : NSObject <MDListener> {
 @private
-    NSString *ipswPath;
-    NSString *deflationDirectory;
 }
 
 

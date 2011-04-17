@@ -8,20 +8,28 @@
 
 #import <Foundation/Foundation.h>
 
+
 @protocol JRFWServerManifestGrabberDelegate;
 
 @interface JRFWServerManifestGrabber : NSObject {
 @private
-    
+    id<JRFWServerManifestGrabberDelegate> _delegate;
+    NSMutableData *_rawResponse;
+    BOOL started;
 }
 
+- (void)beginGrabbing;
+
+@property (assign) id<JRFWServerManifestGrabberDelegate> delegate;
+@property (readonly, getter=hasStarted) BOOL started;
+
 @end
+
 
 @protocol JRFWServerManifestGrabberDelegate <NSObject>
 
 @optional
-- (void)serverManifestGrabberDidBeginDownloading:(JRFWServerManifestGrabber *)grabber;
 - (void)serverManifestGrabberDidFinishWithManifest:(NSDictionary *)manifest;
-- (void)serverManifestGrabberFailedWithError:(NSError *)error;
+- (void)serverManifestGrabberFailedWithErrorDescription:(NSString *)errorDescription;
 
 @end
