@@ -25,6 +25,7 @@
     IBOutlet NSPopUpButton *serverFWChoiceButton;
     IBOutlet NSTabView *restoreTypeTabView;
     NSDictionary *_currentServerManifest;
+    IBOutlet NSButton *almightyRestoreButton;
 }
 
 - (void)updateDeviceLabelForDetachedDevice;
@@ -32,6 +33,7 @@
 - (void)populateServerFirmwarePopupBox;
 
 - (IBAction)browseForIPSW:(id)sender;
+- (IBAction)serverFirmwareSelectionChange:(id)sender;
 - (IBAction)attemptRestore:(id)sender;
 
 @property (assign) IBOutlet NSWindow *window;

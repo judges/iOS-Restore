@@ -24,6 +24,8 @@
 
 + (MDDeviceManager *)sharedInstance;
 
+- (BOOL)deviceIsPluggedIn;
+
 @property (readonly) AMDeviceMode currentDeviceMode;
 @property (readonly) AMDeviceRef currentNormalDevice;
 @property (readonly) AMRestoreModeDeviceRef currentRestoreDevice;

@@ -31,10 +31,6 @@
 }
 
 - (void)beginUnzipping {
-//    NSInvocationOperation *inflationOperation = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(unzipThisMofo) object:nil];
-//    [inflationOperation start];
-//    [inflationOperation release];
-    
     [NSThread detachNewThreadSelector:@selector(unzipThisMofo) toTarget:self withObject:nil];
 }
 

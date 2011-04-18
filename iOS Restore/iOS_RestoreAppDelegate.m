@@ -25,6 +25,7 @@ static NSImage *greenOrbImage = nil;
     greenOrbImage = [[NSImage imageNamed:@"green-orb.png"] retain];
     
     downloadedServerInfo = NO;
+    [almightyRestoreButton setEnabled:NO];
     
     [connectedDeviceLabel setStringValue:@"No Device Connected"];
     
@@ -49,11 +50,24 @@ static NSImage *greenOrbImage = nil;
 - (void)updateDeviceLabelForDetachedDevice {
     [statusOrbView setImage:redOrbImage];
     [self labelDeviceAs:@"No Device Connected"];
+    [almightyRestoreButton setEnabled:NO];
+    [self populateServerFirmwarePopupBox];
 }
 
 - (void)updateDeviceLabelForProductID:(uint16_t)pid deviceID:(uint32_t)did isRestore:(BOOL)isRestore {
     [statusOrbView setImage:greenOrbImage];
     [self labelDeviceAs:iOSRestoreGetDeviceConnectionType(pid, did, isRestore)];
+    
+    [self populateServerFirmwarePopupBox];
+    
+    switch([restoreTypeTabView indexOfTabViewItem:[restoreTypeTabView selectedTabViewItem]]) {
+        case 1: {
+            if([[[serverFWChoiceButton itemAtIndex:0] title] isEqualToString:@"None Available"])
+                [almightyRestoreButton setEnabled:NO];
+            else
+                [almightyRestoreButton setEnabled:YES];
+        }
+    }
 }
                       
 - (void)normalDeviceAttached:(AMDeviceRef)device {
@@ -100,39 +114,36 @@ static NSImage *greenOrbImage = nil;
 - (void)tabView:(NSTabView *)tabView didSelectTabViewItem:(NSTabViewItem *)tabViewItem {
     NSInteger tabIndex = [tabView indexOfTabViewItem:tabViewItem];
     
-    if(tabIndex == 1) {
+    if(tabIndex == 0) {
+        // for now
+        [almightyRestoreButton setEnabled:NO];
+    } else if(tabIndex == 1) {
         if(!downloadedServerInfo) {
             [NSApp beginSheet:serverDownloadSheet modalForWindow:window modalDelegate:self didEndSelector:@selector(sheetDidEnd:returnCode:contextInfo:) contextInfo:NULL];
             [serverDownloadBar startAnimation:self];
             [manifestGrabber performSelector:@selector(beginGrabbing) withObject:nil afterDelay:1.0];
+
         }
     }
 }
 
 - (void)populateServerFirmwarePopupBox {
-    APPLE_MOBILE_DEVICE *deviceType = NULL;
-    
     [serverFWChoiceButton removeAllItems];
     
-    switch([[MDDeviceManager sharedInstance] currentDeviceMode]) {
-        case kAMDeviceNormalMode: {
-            deviceType = iOSRestoreGetDeviceType(AMDeviceUSBProductID([[MDDeviceManager sharedInstance] currentNormalDevice]), 0);
-        } break;
-        case kAMDeviceRecoveryMode: {
-            deviceType = iOSRestoreGetDeviceType(AMRecoveryModeDeviceGetProductID([[MDDeviceManager sharedInstance] currentRecoveryDevice]), AMRecoveryModeDeviceGetProductType([[MDDeviceManager sharedInstance] currentRecoveryDevice]));
-        } break;
-        case kAMDeviceDFUMode: {
-            deviceType = iOSRestoreGetDeviceType(AMDFUModeDeviceGetProductID([[MDDeviceManager sharedInstance] currentDFUDevice]), AMDFUModeDeviceGetProductType([[MDDeviceManager sharedInstance] currentDFUDevice]));
-        } break;
-    }
-    
-    if(deviceType == NULL || _currentServerManifest == nil) {
+    if(![[MDDeviceManager sharedInstance] deviceIsPluggedIn] || _currentServerManifest == nil) {
         [serverFWChoiceButton addItemWithTitle:@"None Available"];
+        [almightyRestoreButton setEnabled:NO];
         return;
     }
     
+    APPLE_MOBILE_DEVICE *deviceType = [[MDDeviceManager sharedInstance] currentDeviceType];
+    
     for(NSString *firmwareVersion in [[_currentServerManifest objectForKey:[NSString stringWithUTF8String:deviceType->model]] allKeys]) {
         [serverFWChoiceButton addItemWithTitle:firmwareVersion];
+    }
+    
+    if([restoreTypeTabView indexOfTabViewItem:[restoreTypeTabView selectedTabViewItem]] == 1) {
+        [almightyRestoreButton setEnabled:YES];
     }
 }
 
@@ -169,7 +180,12 @@ static NSImage *greenOrbImage = nil;
 }
 
 - (IBAction)attemptRestore:(id)sender {
-    
+    // first step, unzip 
+}
+
+- (IBAction)serverFirmwareSelectionChange:(id)sender {
+    if([[MDDeviceManager sharedInstance] deviceIsPluggedIn] && ![[[sender selectedItem] title] isEqualToString:@"None Available"])
+        [almightyRestoreButton setEnabled:YES];
 }
 
 - (void)dealloc {

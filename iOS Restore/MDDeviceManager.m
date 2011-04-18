@@ -94,4 +94,8 @@ static MDDeviceManager *sharedMDDeviceManager = nil;
     currentDeviceType = NULL;
 }
 
+- (BOOL)deviceIsPluggedIn {
+    return ([self currentDeviceType] != NULL);
+}
+
 @end

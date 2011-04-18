@@ -105,8 +105,6 @@ static MDNotificationCenter *sharedMDNotificationCenter = nil;
     if (self) {
         _listeners = [[NSMutableSet alloc] init];
         
-        [self addListener:[MDDeviceManager sharedInstance]];
-        
         AMDeviceNotificationSubscribe(device_notification, 0, 0, 0, &subscription);
         AMRestoreRegisterForDeviceNotifications(dfu_connected, recovery_connected, dfu_disconnected, recovery_disconnected, 0, NULL);
     }
@@ -143,6 +141,8 @@ static MDNotificationCenter *sharedMDNotificationCenter = nil;
 }
 
 - (void)sendMessageToListeners:(SEL)message withDevice:(void *)object {
+    [[MDDeviceManager sharedInstance] performSelector:message withObject:(id)object];
+    
     NSEnumerator *listenersEnumerator = [_listeners objectEnumerator];
     
     id listener = nil;
